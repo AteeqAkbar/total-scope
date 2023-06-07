@@ -12,6 +12,10 @@ import { PopupModule } from '@progress/kendo-angular-popup';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { IconsModule } from '@progress/kendo-angular-icons';
 import { HeroComponent } from './components/hero/hero.component';
+import { VideoComponent } from './components/hero/video/video.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeSectionComponent } from './components/home-section/home-section.component';
+import { CardComponent } from './components/home-section/card/card.component';
 
 
 
@@ -25,7 +29,11 @@ import { HeroComponent } from './components/hero/hero.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    VideoComponent,
+    FooterComponent,
+    HomeSectionComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
