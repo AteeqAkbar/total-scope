@@ -1,11 +1,14 @@
 .center {
   display: flex;
   align-items: center;
-font-size: 15px;
-font-weight: 500;
+  font-size: 15px;
+  font-weight: 500;
 }
 .center-justify {
   justify-content: space-between;
-  padding: 0 50px 0px 60px;
+}
+.footer {
   border-top: 2px solid #f2f8fd;
+
+  width: 100%;
 }

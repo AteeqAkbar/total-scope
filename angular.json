@@ -30,7 +30,7 @@
                 "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.css"
               }
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
@@ -90,7 +90,7 @@
               },
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
           }
         }
       }
