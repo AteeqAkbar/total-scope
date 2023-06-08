@@ -4,8 +4,36 @@
       Estimates that save you time and <br />communication with the carrier
     </div>
     <div style="display: flex">
-      <app-card *ngFor="let item of items"></app-card>
+      <app-card *ngFor="let item of items" [data]="item"></app-card>
     </div>
   </div>
-  <div>qr</div>
+  <div
+    style="
+      background-color: #f2f8fd;
+      width: 100%;
+      margin: 10px;
+      padding: 9px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    "
+  >
+    <div style="font-size: 20px">
+      Download <span style="color: #1ce8cf; font-weight: 700"> FREE </span>
+    </div>
+    <div style="font-size: 20px; margin-bottom: 4px">TotalScope Mobile App</div>
+
+    <div>
+      <img src="assets/google-play.svg" alt="google" />
+      &nbsp;
+      <img src="assets/app-store.svg" alt="app" />
+    </div>
+    <div>
+      <img src="assets/qrcode.svg" alt="qrcode" />
+      &nbsp;
+      <img src="assets/qrcode.svg" alt="qrcode" />
+    </div>
+  </div>
 </div>
