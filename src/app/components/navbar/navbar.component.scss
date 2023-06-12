@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+.navhight{}
 .appbar-items {
   display: flex;
   justify-content: space-between;
@@ -11,6 +12,7 @@ body {
 }
 .title {
   font-size: 18px;
+
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -56,62 +58,20 @@ li:hover {
   border-radius: 32px;
   padding: 6px 29px;
 }
-@media only screen and (max-width: 600px) {
-  .search-section {
-    display: none;
-  }
-
-  .appbar-items,
-  .user-actions kendo-badge-container,
-  kendo-avatar.k-avatar,
-  .k-appbar-separator {
-    display: none;
-  }
-  .show-titles {
-    display: none;
-  }
-
-  .overflow-button,
-  .search {
-    display: block;
-  }
+.show-titles {
+  display: flex;
+  align-items: center;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .appbar-items,
-  .search,
-  kendo-avatar.k-avatar,
-  .user-actions kendo-badge-container,
-  .k-appbar-separator {
-    display: none;
-  }
-  .show-titles {
-    display: flex;
-  }
-
-  .overflow-button {
-    display: block;
-  }
+.btt-icons {
+  background-color: #306fd5 !important;
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+  color: white;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .appbar-items,
-  .user-actions kendo-badge-container,
-  .k-appbar-separator,
-  kendo-avatar.k-avatar {
-    display: block;
-  }
-  .show-titles {
-    display: flex;
-  }
-
-  .overflow-button {
-    display: none;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+.d-flexcol {
+  display: flex;
+  flex-direction: column;
 }

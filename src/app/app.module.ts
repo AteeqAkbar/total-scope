@@ -17,14 +17,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeSectionComponent } from './components/home-section/home-section.component';
 import { CardComponent } from './components/home-section/card/card.component';
 
-
-
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +25,7 @@ import { CardComponent } from './components/home-section/card/card.component';
     VideoComponent,
     FooterComponent,
     HomeSectionComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,9 +36,9 @@ import { CardComponent } from './components/home-section/card/card.component';
     IndicatorsModule,
     PopupModule,
     InputsModule,
-    IconsModule
+    IconsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

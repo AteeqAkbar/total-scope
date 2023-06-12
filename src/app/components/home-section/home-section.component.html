@@ -1,27 +1,33 @@
+&nbsp;
 <div class="main">
-  <div>
-    <div style="font-size: 28px; line-height: 32px; padding-bottom: 39px">
+  <div class="sectionOne">
+    <div class="heading1">
       Estimates that save you time and <br />communication with the carrier
     </div>
-    <div style="display: flex">
+    <div class="sectionTwo">
       <app-card *ngFor="let item of items" [data]="item"></app-card>
     </div>
   </div>
   <div class="qr">
-    <div style="font-size: 20px">
+    <div style="font-size: 16px">
       Download <span style="color: #1ce8cf; font-weight: 700"> FREE </span>
     </div>
-    <div style="font-size: 20px; margin-bottom: 4px">TotalScope Mobile App</div>
+    <div style="font-size: 16px; margin-bottom: 4px">TotalScope Mobile App</div>
 
     <div>
-      <img src="assets/google-play.svg" alt="google" />
+      <img
+        height="30px"
+        width="90px"
+        src="assets/google-play.svg"
+        alt="google"
+      />
       &nbsp;
-      <img src="assets/app-store.svg" alt="app" />
+      <img height="30px" width="90px" src="assets/app-store.svg" alt="app" />
     </div>
     <div>
-      <img src="assets/qrcode.svg" alt="qrcode" />
+      <img height="90px" width="90px" src="assets/qrcode.svg" alt="qrcode" />
       &nbsp;
-      <img src="assets/qrcode.svg" alt="qrcode" />
+      <img height="90px" width="90px" src="assets/qrcode.svg" alt="qrcode" />
     </div>
   </div>
 </div>

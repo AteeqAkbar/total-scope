@@ -7,6 +7,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { AppBarPositionMode } from '@progress/kendo-angular-navigation';
+import * as svgIcons from '@progress/kendo-svg-icons';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -17,7 +18,7 @@ import { AppBarPositionMode } from '@progress/kendo-angular-navigation';
 export class NavbarComponent implements AfterViewInit {
   @ViewChild('anchor', { static: false })
   public anchor!: ElementRef<HTMLElement>; // Add the definite assignment assertion here
-
+  public allIcons = svgIcons;
   public positionMode: AppBarPositionMode = 'sticky';
   public kendokaAvatar =
     'https://www.telerik.com/kendo-angular-ui-develop/components/navigation/appbar/assets/kendoka-angular.png';

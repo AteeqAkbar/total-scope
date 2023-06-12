@@ -1,7 +1,16 @@
-<div class="container w-100">
-  <app-navbar></app-navbar>
-  <app-hero></app-hero>
-  <app-home-section></app-home-section>
-</div>
+<div class="fit-content">
+  <div class="appNavbar container">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="container w-100 main-content">
+    <div class="d-flex flex-column h-100">
+      <div class="main-one container">
+        <app-hero></app-hero>
+      </div>
 
-<app-footer></app-footer>
+      <app-home-section class="container" style="flex: 1"></app-home-section>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

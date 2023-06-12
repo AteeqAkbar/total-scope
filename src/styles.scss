@@ -1,4 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 // IMPORT OUR THERE SCSS FILES
+@import "styles/variable";
 @import "styles/index";
+// body {
+//   margin: 0;
+//   padding: 0;
+//   min-height: 100vh !important;
+// }
