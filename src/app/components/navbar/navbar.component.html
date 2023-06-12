@@ -1,85 +1,51 @@
 <kendo-appbar class="navhight container" position="top">
-  <kendo-appbar-spacer width="32px"></kendo-appbar-spacer>
-
-  <kendo-appbar-section class="appbar-items show-titles">
-    <kendo-appbar-section class="title">
-      <img src="assets/logo.png" alt="logo" />
-    </kendo-appbar-section>
-    <ul class="show-titles d-none d-lg-flex">
-      <li><span class="active">Home </span></li>
-      <li><span>About</span></li>
-      <li><span>Pricing</span></li>
-      <li><span>Videos</span></li>
-      <li><span>Testimonials</span></li>
-      <li><span>Contacts</span></li>
-    </ul>
-
-    <div class="d-none d-lg-flex">
-      <button
-        class="btn"
-        kendoButton
-        (click)="onButtonClick()"
-        fillMode="outline"
-      >
-        Login
-      </button>
-      &nbsp;&nbsp;
-      <button
-        class="btn"
-        kendoButton
-        (click)="onButtonClick()"
-        themeColor="primary"
-      >
-        Register
-      </button>
-    </div>
-    <button
-      kendoButton
-      fillMode="flat"
-      [style]="show ? 'background-color: #0c1d3e !important' : ''"
-      class="overflow-button d-lg-none btt-icons d-flex align-self-center justify-content-center"
-      #anchor
-      (click)="onToggle()"
-    >
-      <kendo-svg-icon
-        [icon]="show ? allIcons.xIcon : allIcons.menuIcon"
-      ></kendo-svg-icon>
-    </button>
-    <kendo-popup
-      style="left: 420px !important"
-      [anchor]="anchor.element"
-      *ngIf="show"
-      [margin]="margin"
-    >
-      <div class="content p-2">
-        <ul>
-          <li><span>Home </span></li>
-          <li><span>About</span></li>
-          <li><span>Pricing</span></li>
-          <li><span>Videos</span></li>
-          <li><span>Testimonials</span></li>
-          <li><span>Contacts</span></li>
-          <div class="d-flexcol">
-            <button
-              class="btn"
-              kendoButton
-              (click)="onButtonClick()"
-              fillMode="outline"
-            >
-              Login
+    <kendo-appbar-spacer width="32px"></kendo-appbar-spacer>
+    <kendo-appbar-section class="appbar-items show-titles">
+        <kendo-appbar-section class="title">
+            <img src="assets/logo.png" alt="logo" />
+        </kendo-appbar-section>
+        <ul class="show-titles d-none d-lg-flex">
+            <li><span class="active">Home </span></li>
+            <li><span>About</span></li>
+            <li><span>Pricing</span></li>
+            <li><span>Videos</span></li>
+            <li><span>Testimonials</span></li>
+            <li><span>Contacts</span></li>
+        </ul>
+        <div class="d-none d-lg-flex">
+            <button class="btn" kendoButton (click)="onButtonClick()" fillMode="outline">
+                Login
             </button>
             &nbsp;&nbsp;
-            <button
-              class="btn"
-              kendoButton
-              (click)="onButtonClick()"
-              themeColor="primary"
-            >
-              Register
+            <button class="btn" kendoButton (click)="onButtonClick()" themeColor="primary">
+                Register
             </button>
-          </div>
-        </ul>
-      </div>
-    </kendo-popup>
-  </kendo-appbar-section>
+        </div>
+        <button kendoButton fillMode="flat" [style]="show ? 'background-color: #0c1d3e !important' : ''"
+            class="overflow-button d-lg-none btt-icons d-flex align-self-center justify-content-center" #anchor
+            (click)="onToggle()">
+            <kendo-svg-icon [icon]="show ? allIcons.xIcon : allIcons.menuIcon"></kendo-svg-icon>
+        </button>
+        <kendo-popup style="left: 420px !important" [anchor]="anchor.element" *ngIf="show" [margin]="margin">
+            <div class="content p-2">
+                <ul>
+                    <li><span>Home </span></li>
+                    <li><span>About</span></li>
+                    <li><span>Pricing</span></li>
+                    <li><span>Videos</span></li>
+                    <li><span>Testimonials</span></li>
+                    <li><span>Contacts</span></li>
+                    <div class="d-flexcol">
+                        <button class="btn" kendoButton (click)="onButtonClick()" fillMode="outline">
+                            Login
+                        </button>
+                        &nbsp;&nbsp;
+                        <button class="btn" kendoButton (click)="onButtonClick()" themeColor="primary">
+                            Register
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </kendo-popup>
+    </kendo-appbar-section>
 </kendo-appbar>
