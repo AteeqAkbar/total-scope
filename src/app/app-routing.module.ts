@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Default route
-  { path: 'about', component: AboutComponent },
-];
+  {
+    path: '',
+    loadChildren: () =>
+      import('./layouts/public-layout/public-layout.module').then(
+        (m) => m.PublicLayoutModule
+      ),
+  },
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

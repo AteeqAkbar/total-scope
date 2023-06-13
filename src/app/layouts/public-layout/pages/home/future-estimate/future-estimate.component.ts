@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'future-estimate',
+  selector: 'app-future-estimate',
   templateUrl: './future-estimate.component.html',
   styleUrls: ['./future-estimate.component.scss'],
 })
-export class FutureEstimatComponent {
+export class FutureEstimateComponent {
   public onButtonClick(): void {
-    console.log('click');
+    console.log('click')
   }
 }

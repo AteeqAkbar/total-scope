@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'qr-card',
+  selector: 'app-qr-card',
   templateUrl: './qr-card.component.html',
   styleUrls: ['./qr-card.component.scss']
 })
