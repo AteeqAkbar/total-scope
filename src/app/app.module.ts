@@ -20,6 +20,7 @@ import { CardComponent } from "./components/home-section/card/card.component";
 import { HomeSectionComponent } from "./components/home-section/home-section.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,
