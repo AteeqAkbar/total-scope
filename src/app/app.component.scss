@@ -17,17 +17,20 @@ body {
 }
 .appNavbar {
   flex: 0;
+  // border: 1px solid blue;
 }
 .main-content {
   flex: 1;
+  
+  // border: 1px solid red;
 }
 
-.main-one{
+.main-one {
   flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.appFooter {
-  flex: 0 0 auto;
-}
+// .appFooter {
+//   flex: 0 0 auto;
+// }

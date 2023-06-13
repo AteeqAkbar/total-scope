@@ -2,15 +2,8 @@
   <div class="appNavbar container">
     <app-navbar></app-navbar>
   </div>
-  <div class="container w-100 main-content">
-    <div class="d-flex flex-column h-100">
-      <div class="main-one container">
-        <app-hero></app-hero>
-      </div>
-
-      <app-home-section class="container" style="flex: 1"></app-home-section>
-    </div>
+  <div class="main-content">
+    <router-outlet></router-outlet>
   </div>
-
   <app-footer></app-footer>
 </div>

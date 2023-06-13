@@ -1,0 +1,21 @@
+@import "../../../styles/variable";
+ .howe-wrapper {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  @media #{$lg-layout} {
+    height: 60vh !important;
+  }
+}
+
+.main-content {
+  flex: 1;
+  // display: flex;
+}
+
+.main-one {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

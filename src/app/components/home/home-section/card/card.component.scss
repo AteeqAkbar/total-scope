@@ -1,0 +1,13 @@
+.cards {
+    width: 169px;
+    padding: 10px 10px 10px 0px;
+  }
+  @media only screen and (max-width: 768px) {
+    .cards {
+      display: flex;
+      align-items: center;
+      width: 280px;
+      justify-content: space-between;
+    }
+  }
+  
