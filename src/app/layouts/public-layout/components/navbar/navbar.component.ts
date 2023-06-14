@@ -5,9 +5,10 @@ import {
   NgZone,
   ViewChild,
   ViewEncapsulation,
-} from '@angular/core'
-import { AppBarPositionMode } from '@progress/kendo-angular-navigation'
-import * as svgIcons from '@progress/kendo-svg-icons'
+} from '@angular/core';
+import { AppBarPositionMode } from '@progress/kendo-angular-navigation';
+import * as svgIcons from '@progress/kendo-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -17,34 +18,40 @@ import * as svgIcons from '@progress/kendo-svg-icons'
 })
 export class NavbarComponent implements AfterViewInit {
   @ViewChild('anchor', { static: false })
-  public anchor!: ElementRef<HTMLElement> // Add the definite assignment assertion here
-  public allIcons = svgIcons
-  public positionMode: AppBarPositionMode = 'sticky'
+  public anchor!: ElementRef<HTMLElement>; // Add the definite assignment assertion here
+  public allIcons = svgIcons;
+  public positionMode: AppBarPositionMode = 'sticky';
   public kendokaAvatar =
-    'https://www.telerik.com/kendo-angular-ui-develop/components/navigation/appbar/assets/kendoka-angular.png'
-  public margin = { horizontal: -46, vertical: 7 }
-  public show = false
+    'https://www.telerik.com/kendo-angular-ui-develop/components/navigation/appbar/assets/kendoka-angular.png';
+  public margin = { horizontal: -46, vertical: 7 };
+  public show = false;
+  public activeLink = '';
 
+  onClickLink(link: string) {
+    this.activeLink = link;
+    // Navigate to a specific route
+    this.router.navigate([`/${link}`]);
+  }
   public onToggle(): void {
-    this.show = !this.show
+    this.show = !this.show;
   }
 
-  constructor(private zone: NgZone) {
+  constructor(private zone: NgZone, private router: Router) {
     // Assign a value to the anchor property in the constructor
     // if you have a specific ElementRef instance to assign.
     // Otherwise, it will be assigned by ViewChild in the lifecycle hook.
   }
 
   public onButtonClick(): void {
-    console.log('click')
+    console.log('click');
   }
   public ngAfterViewInit(): void {
     this.zone.runOutsideAngular(() => {
       window.addEventListener('resize', () => {
         if (this.show) {
-          this.zone.run(() => this.onToggle())
+          this.zone.run(() => this.onToggle());
         }
-      })
-    })
+      });
+    });
   }
 }

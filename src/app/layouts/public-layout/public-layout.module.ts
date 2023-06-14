@@ -17,7 +17,11 @@ import { PublicLayoutComponent } from './public-layout.component';
 import { FutureEstimateComponent } from './pages/home/future-estimate/future-estimate.component';
 import { EstimateCardComponent } from './pages/home/estimate-card/estimate-card.component';
 import { QrCardComponent } from './pages/home/qr-card/qr-card.component';
-import { FutureEstimateVideoComponent } from './pages/home/future-estimate-video/future-estimate-video.component'
+import { FutureEstimateVideoComponent } from './pages/home/future-estimate-video/future-estimate-video.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { VideosComponent } from './pages/videos/videos.component';
+import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { ContactsComponent } from './pages/contacts/contacts.component'
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { FutureEstimateVideoComponent } from './pages/home/future-estimate-video
     EstimateCardComponent,
     QrCardComponent,
     FutureEstimateVideoComponent,
+    PricingComponent,
+    VideosComponent,
+    TestimonialsComponent,
+    ContactsComponent,
   ],
   imports: [
     CommonModule,
