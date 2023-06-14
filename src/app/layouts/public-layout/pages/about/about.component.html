@@ -1,81 +1,43 @@
 <div class="d-flex flex-column h-100 boxrder">
-  <div style="flex: 2; display: flex; align-items: center" class="border">
-    <div class="d-flex w-100 container">
-      <div class="container" style="flex: 1; height: 100%">
-        <div style="font-size: 18px; font-weight: 500">About TotalScope</div>
-        <div style="font-size: 32px; font-weight: 700; line-height: 1">
-          TotalScope’s Founders Have Real Industry Experience:
+  <div class="section-one">
+    <div class="d-flex w-100 container" style="">
+      <div class="section-one-main">
+        <br />
+        <div class="topheading">About TotalScope</div>
+        <div class="section-one-heading">
+          TotalScope’s<br />
+          Founders Have Real Industry Experience:
         </div>
-        &nbsp;
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            font-size: 17px;
-            font-weight: 600;
-          "
-          *ngFor="let item of items"
-        >
+
+        <div class="section-one-list" *ngFor="let item of items">
           <img
-            height="20px"
-            width="20px"
+            height="18px"
+            width="18px"
             src="assets/check-blue.svg"
             alt="check"
           />&nbsp;<span>{{ item.text }}</span>
         </div>
       </div>
-      <!-- <div class="position-relative" style="flex: 2; border: 1px solid red">
-        <img
-          style="
-            object-fit: cover;
-            object-position: center;
-            height: 100%;
-            width: 100%;
-
-            /* margin-right: 100px; */
-          "
-          src="assets/roofer.png"
-          alt="roof"
-        />
-      </div> -->
+      <div class="" style="flex: 2">
+        <div>
+          <img class="section-one-image" src="assets/roofer.png" alt="roof" />
+        </div>
+      </div>
     </div>
-
   </div>
   <br />
 
-  <div
-    style="
-      flex: 1;
-      display: flex;
-      align-items: center;
-      background-color: #f2f8fd;
-    "
-  >
+  <div class="section-two">
     <div class="container p-2">
-      <div
-        style="
-          font-size: 20px;
-          line-height: 1;
-          font-weight: 500;
-          padding-bottom: 5px;
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          /* align-items: center; */
-          justify-content: center;
-        "
-      >
-        Why We Started TotalScope
-      </div>
-      <p style="font-size: 14px; font-weight: 400; padding-bottom: 5px">
+      <div class="section-two-main">Why We Started TotalScope</div>
+      <p class="section-two-p pb-0">
         After running a successful roofing & restoration company for a number of
         years, we noticed that our in-house estimates far out-paced those of our
         fellow contractors. First one, then another, then more and more were
         asking us to write their estimates for them, as they were getting larger
         and larger claims easily approved.
       </p>
-      <p style="font-size: 14px; padding-bottom: 5px; font-weight: 400">
+      <p class="section-two-p">
         We turned this into our side hustle, then one day found that roofing had
         become the side hustle after writing estimates and supplements was
         taking most of our time. The writing was on the wall, so we decided to
