@@ -1,4 +1,4 @@
-<kendo-appbar class="navhight container" position="top">
+<kendo-appbar class="navhight container p-0" position="top">
   <kendo-appbar-spacer width="32px"></kendo-appbar-spacer>
 
   <kendo-appbar-section class="appbar-items show-titles">
@@ -6,25 +6,27 @@
       <img src="assets/logo.png" alt="logo" />
     </kendo-appbar-section>
     <ul class="show-titles d-none d-lg-flex">
-      <li (click)="onClickLink('')">
-        <span [class]="activeLink == '' ? 'active' : ''">Home </span>
+      <li (click)="onClickLink('/')">
+        <span [class]="activeLink == '/' ? 'active' : ''">Home </span>
       </li>
-      <li (click)="onClickLink('about')">
-        <span [class]="activeLink == 'about' ? 'active' : ''">About</span>
+      <li (click)="onClickLink('/about')">
+        <span [class]="activeLink == '/about' ? 'active' : ''">About</span>
       </li>
-      <li (click)="onClickLink('pricing')">
-        <span [class]="activeLink == 'pricing' ? 'active' : ''">Pricing</span>
+      <li (click)="onClickLink('/pricing')">
+        <span [class]="activeLink == '/pricing' ? 'active' : ''">Pricing</span>
       </li>
-      <li (click)="onClickLink('videos')">
-        <span [class]="activeLink == 'videos' ? 'active' : ''">Videos</span>
+      <li (click)="onClickLink('/videos')">
+        <span [class]="activeLink == '/videos' ? 'active' : ''">Videos</span>
       </li>
-      <li (click)="onClickLink('testimonials')">
-        <span [class]="activeLink == 'testimonials' ? 'active' : ''"
+      <li (click)="onClickLink('/testimonials')">
+        <span [class]="activeLink == '/testimonials' ? 'active' : ''"
           >Testimonials</span
         >
       </li>
-      <li (click)="onClickLink('contacts')">
-        <span [class]="activeLink == 'contacts' ? 'active' : ''">Contacts</span>
+      <li (click)="onClickLink('/contacts')">
+        <span [class]="activeLink == '/contacts' ? 'active' : ''"
+          >Contacts</span
+        >
       </li>
     </ul>
 
@@ -67,27 +69,29 @@
     >
       <div class="content p-2">
         <ul>
-          <li (click)="onClickLink('')">
-            <span [class]="activeLink == '' ? 'active' : ''">Home </span>
+          <li (click)="onClickLink('/')">
+            <span [class]="activeLink == '/' ? 'active' : ''">Home </span>
           </li>
-          <li (click)="onClickLink('about')">
-            <span [class]="activeLink == 'about' ? 'active' : ''">About</span>
+          <li (click)="onClickLink('/about')">
+            <span [class]="activeLink == '/about' ? 'active' : ''">About</span>
           </li>
-          <li (click)="onClickLink('pricing')">
-            <span [class]="activeLink == 'pricing' ? 'active' : ''"
+          <li (click)="onClickLink('/pricing')">
+            <span [class]="activeLink == '/pricing' ? 'active' : ''"
               >Pricing</span
             >
           </li>
-          <li (click)="onClickLink('videos')">
-            <span [class]="activeLink == 'videos' ? 'active' : ''">Videos</span>
+          <li (click)="onClickLink('/videos')">
+            <span [class]="activeLink == '/videos' ? 'active' : ''"
+              >Videos</span
+            >
           </li>
-          <li (click)="onClickLink('testimonials')">
-            <span [class]="activeLink == 'testimonials' ? 'active' : ''"
+          <li (click)="onClickLink('/testimonials')">
+            <span [class]="activeLink == '/testimonials' ? 'active' : ''"
               >Testimonials</span
             >
           </li>
-          <li (click)="onClickLink('contacts')">
-            <span [class]="activeLink == 'contacts' ? 'active' : ''"
+          <li (click)="onClickLink('/contacts')">
+            <span [class]="activeLink == '/contacts' ? 'active' : ''"
               >Contacts</span
             >
           </li>

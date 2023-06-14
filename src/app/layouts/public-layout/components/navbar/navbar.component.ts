@@ -3,6 +3,7 @@ import {
   Component,
   ElementRef,
   NgZone,
+  OnInit,
   ViewChild,
   ViewEncapsulation,
 } from '@angular/core';
@@ -16,7 +17,7 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent implements OnInit, AfterViewInit {
   @ViewChild('anchor', { static: false })
   public anchor!: ElementRef<HTMLElement>; // Add the definite assignment assertion here
   public allIcons = svgIcons;
@@ -26,11 +27,14 @@ export class NavbarComponent implements AfterViewInit {
   public margin = { horizontal: -46, vertical: 7 };
   public show = false;
   public activeLink = '';
+  ngOnInit() {
+    this.activeLink = this.router.url;
+  }
 
   onClickLink(link: string) {
     this.activeLink = link;
     // Navigate to a specific route
-    this.router.navigate([`/${link}`]);
+    this.router.navigate([link]);
   }
   public onToggle(): void {
     this.show = !this.show;
