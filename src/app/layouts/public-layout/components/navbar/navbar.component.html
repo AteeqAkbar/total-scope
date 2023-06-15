@@ -6,83 +6,39 @@
       <img src="assets/logo.png" alt="logo" />
     </kendo-appbar-section>
     <ul class="show-titles d-none d-lg-flex">
-      <li
-        *ngFor="let link of navLinks"
-        (click)="onClickLink(link.path)"
-        class="links"
-      >
-        <span [class]="activeLink == link.path ? 'active' : ''"
-          >{{ link.text }}
+      <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)" class="links">
+        <span [class]="activeLink == link.path ? 'active' : ''">{{ link.text }}
         </span>
       </li>
     </ul>
-
     <div class="d-none d-lg-flex">
-      <button
-        class="btn"
-        kendoButton
-        (click)="onButtonClick()"
-        fillMode="outline"
-      >
+      <button class="btn" kendoButton (click)="onButtonClick()" fillMode="outline">
         Login
       </button>
       &nbsp;&nbsp;
-      <button
-        class="btn"
-        kendoButton
-        (click)="onButtonClick()"
-        themeColor="primary"
-      >
+      <button class="btn" kendoButton (click)="onButtonClick()" themeColor="primary">
         Register
       </button>
     </div>
-    <button
-      kendoButton
-      fillMode="flat"
-      [style]="show ? 'background-color: #0c1d3e !important' : ''"
-      class="overflow-button d-lg-none btt-icons d-flex align-self-center justify-content-center"
-      #anchor
-      (click)="onToggle()"
-    >
-      <kendo-svg-icon
-        [icon]="show ? allIcons.xIcon : allIcons.menuIcon"
-      ></kendo-svg-icon>
+    <button kendoButton fillMode="flat" [style]="show ? 'background-color: #0c1d3e !important' : ''"
+      class="overflow-button d-lg-none btt-icons d-flex align-self-center justify-content-center" #anchor
+      (click)="onToggle()">
+      <kendo-svg-icon [icon]="show ? allIcons.xIcon : allIcons.menuIcon"></kendo-svg-icon>
     </button>
-    <kendo-popup
-    [popupAlign]="popupAlign"
-      style="left: 420px !important"
-      [anchor]="anchor.element"
-      *ngIf="show"
-      [margin]="margin"
-    >
+    <kendo-popup [popupAlign]="popupAlign" style="left: 420px !important" [anchor]="anchor.element" *ngIf="show"
+      [margin]="margin">
       <div class="content p-2">
         <ul>
-          <li
-            *ngFor="let link of navLinks"
-            (click)="onClickLink(link.path)"
-            class="links"
-          >
-            <span [class]="activeLink == link.path ? 'active' : ''"
-              >{{ link.text }}
+          <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)" class="links">
+            <span [class]="activeLink == link.path ? 'active' : ''">{{ link.text }}
             </span>
           </li>
-
           <div class="d-flexcol">
-            <button
-              class="btn"
-              kendoButton
-              (click)="onButtonClick()"
-              fillMode="outline"
-            >
+            <button class="btn" kendoButton (click)="onButtonClick()" fillMode="outline">
               Login
             </button>
-            &nbsp;&nbsp;
-            <button
-              class="btn"
-              kendoButton
-              (click)="onButtonClick()"
-              themeColor="primary"
-            >
+            &nbsp;
+            <button class="btn" kendoButton (click)="onButtonClick()" themeColor="primary">
               Register
             </button>
           </div>

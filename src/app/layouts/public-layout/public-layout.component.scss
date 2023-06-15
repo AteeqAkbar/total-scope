@@ -15,14 +15,11 @@ body {
   height: 100vh;
   flex-direction: column;
 }
-.appNavbar {
+.app-navbar {
   flex: 0;
-  // border: 1px solid blue;
 }
 .main-content {
   flex: 1;
-
-  // border: 1px solid red;
 }
 
 .footer-flex {
@@ -35,6 +32,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-// .appFooter {
-//   flex: 0 0 auto;
-// }

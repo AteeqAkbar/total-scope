@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-about',
@@ -28,5 +28,5 @@ export class AboutComponent {
     {
       text: 'Licensed general contracting',
     },
-  ];
+  ]
 }

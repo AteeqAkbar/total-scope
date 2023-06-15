@@ -1,18 +1,41 @@
+// IMPORTING THE ANGULAR MODULES FOR POPUPS.
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
 
+// IMPORTING THE ANGULAR MODULES FOR DOING OPERATIONS ON URL.
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router'
+import { PublicLayoutComponent } from './layouts/public-layout/public-layout.component'
+
+// DEFINING THE ROUTES FOR ANGULAR.
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./layouts/public-layout/public-layout.module').then(
-        (m) => m.PublicLayoutModule
-      ),
+    component: PublicLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
+      },
+      {
+        path: 'about',
+        loadChildren: () => import('./modules/about/about.module').then((m) => m.AboutModule),
+      },
+    ],
   },
 ]
 
+// AN ANGULAR DECORATOR THAT IDENTIFIES THE MODULE'S OWN COMPONENTS, DIRECTIVES, AND PIPES.
+// SO THAT EXTERNAL COMPONENTS CAN USE THEM.
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  imports: [
+    // SETTING THE ABOVE ROUTES IN ANGULAR ROUTER MODULE.
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
+
+  exports: [
+    // EXPORTING THE ROUTER MODULE.
+    RouterModule,
+  ],
 })
+
+// DECLARING THE AppRoutingModule CLASS WITH EXPORT SO THAT WE CAN IMPORT THIS SERVICE INTO ANY OTHER COMPONENT OR SERVICE.
 export class AppRoutingModule {}

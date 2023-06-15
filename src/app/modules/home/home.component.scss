@@ -1,4 +1,4 @@
-@import "../../../../../styles/variable";
+@import "../../../styles/variable";
 .howe-wrapper {
   width: 100% !important;
 
@@ -9,12 +9,10 @@
 
 .main-content {
   flex: 1;
-  // display: flex;
 }
 
 .main-one {
   flex: 2;
-  // border: 1px solid green;
 
   display: flex;
   justify-content: center;
@@ -24,8 +22,6 @@
   display: flex;
   justify-content: space-between;
 
-  // height: 210px;
-  // padding: 10px 0px;
 }
 .sectionOne {
   display: flex;
@@ -44,8 +40,6 @@
   width: 300px;
   margin-bottom: 10px;
   height: 200px;
-  // margin: 10px;
-  // padding: 19px 0px;
   padding: 12px;
   border-radius: 20px;
   display: flex;
@@ -88,7 +82,6 @@
 @media only screen and (max-width: 1200px) {
   .main {
     flex-direction: column;
-    // align-items: center;
   }
   .qr {
     align-self: center;
