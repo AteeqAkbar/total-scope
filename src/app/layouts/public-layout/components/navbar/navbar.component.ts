@@ -10,6 +10,7 @@ import {
 import { AppBarPositionMode } from '@progress/kendo-angular-navigation';
 import * as svgIcons from '@progress/kendo-svg-icons';
 import { Router } from '@angular/router';
+import { Align } from "@progress/kendo-angular-popup";
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -25,6 +26,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   public kendokaAvatar =
     'https://www.telerik.com/kendo-angular-ui-develop/components/navigation/appbar/assets/kendoka-angular.png';
   public margin = { horizontal: -46, vertical: 7 };
+  public popupAlign: Align = { horizontal: "right", vertical: "top" };
   public show = false;
   public activeLink = '';
   ngOnInit() {

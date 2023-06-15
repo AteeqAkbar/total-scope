@@ -6,7 +6,11 @@
       <img src="assets/logo.png" alt="logo" />
     </kendo-appbar-section>
     <ul class="show-titles d-none d-lg-flex">
-      <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)">
+      <li
+        *ngFor="let link of navLinks"
+        (click)="onClickLink(link.path)"
+        class="links"
+      >
         <span [class]="activeLink == link.path ? 'active' : ''"
           >{{ link.text }}
         </span>
@@ -45,6 +49,7 @@
       ></kendo-svg-icon>
     </button>
     <kendo-popup
+    [popupAlign]="popupAlign"
       style="left: 420px !important"
       [anchor]="anchor.element"
       *ngIf="show"
@@ -52,7 +57,11 @@
     >
       <div class="content p-2">
         <ul>
-          <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)">
+          <li
+            *ngFor="let link of navLinks"
+            (click)="onClickLink(link.path)"
+            class="links"
+          >
             <span [class]="activeLink == link.path ? 'active' : ''"
               >{{ link.text }}
             </span>
