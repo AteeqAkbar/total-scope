@@ -30,6 +30,14 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.activeLink = this.router.url;
   }
+  public navLinks = [
+    { path: '/', text: 'Home' },
+    { path: '/about', text: 'About' },
+    { path: '/pricing', text: 'Pricing' },
+    { path: '/videos', text: 'Videos' },
+    { path: 'Testimonials', text: 'Testimonials' },
+    { path: '/contacts', text: 'Contacts' },
+  ];
 
   onClickLink(link: string) {
     this.activeLink = link;
@@ -54,7 +62,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       window.addEventListener('resize', () => {
         if (this.show) {
           this.zone.run(() => this.onToggle());
-        }
+        } 
       });
     });
   }

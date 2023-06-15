@@ -1,18 +1,18 @@
-import { CommonModule } from '@angular/common'
-import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { ButtonsModule } from '@progress/kendo-angular-buttons'
-import { IconsModule } from '@progress/kendo-angular-icons'
-import { IndicatorsModule } from '@progress/kendo-angular-indicators'
-import { InputsModule } from '@progress/kendo-angular-inputs'
-import { LayoutModule } from '@progress/kendo-angular-layout'
-import { NavigationModule } from '@progress/kendo-angular-navigation'
-import { PopupModule } from '@progress/kendo-angular-popup'
-import { FooterComponent } from './components/footer/footer.component'
-import { NavbarComponent } from './components/navbar/navbar.component'
-import { AboutComponent } from './pages/about/about.component'
-import { HomeComponent } from './pages/home/home.component'
-import { PublicLayoutRoutingModule } from './public-layout-routing.module'
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { IconsModule } from '@progress/kendo-angular-icons';
+import { IndicatorsModule } from '@progress/kendo-angular-indicators';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { LayoutModule } from '@progress/kendo-angular-layout';
+import { NavigationModule } from '@progress/kendo-angular-navigation';
+import { PopupModule } from '@progress/kendo-angular-popup';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PublicLayoutRoutingModule } from './public-layout-routing.module';
 import { PublicLayoutComponent } from './public-layout.component';
 import { FutureEstimateComponent } from './pages/home/future-estimate/future-estimate.component';
 import { EstimateCardComponent } from './pages/home/estimate-card/estimate-card.component';
@@ -21,7 +21,7 @@ import { FutureEstimateVideoComponent } from './pages/home/future-estimate-video
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { VideosComponent } from './pages/videos/videos.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
-import { ContactsComponent } from './pages/contacts/contacts.component'
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 @NgModule({
   declarations: [

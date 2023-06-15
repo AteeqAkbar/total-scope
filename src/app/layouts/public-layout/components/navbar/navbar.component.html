@@ -6,27 +6,10 @@
       <img src="assets/logo.png" alt="logo" />
     </kendo-appbar-section>
     <ul class="show-titles d-none d-lg-flex">
-      <li (click)="onClickLink('/')">
-        <span [class]="activeLink == '/' ? 'active' : ''">Home </span>
-      </li>
-      <li (click)="onClickLink('/about')">
-        <span [class]="activeLink == '/about' ? 'active' : ''">About</span>
-      </li>
-      <li (click)="onClickLink('/pricing')">
-        <span [class]="activeLink == '/pricing' ? 'active' : ''">Pricing</span>
-      </li>
-      <li (click)="onClickLink('/videos')">
-        <span [class]="activeLink == '/videos' ? 'active' : ''">Videos</span>
-      </li>
-      <li (click)="onClickLink('/testimonials')">
-        <span [class]="activeLink == '/testimonials' ? 'active' : ''"
-          >Testimonials</span
-        >
-      </li>
-      <li (click)="onClickLink('/contacts')">
-        <span [class]="activeLink == '/contacts' ? 'active' : ''"
-          >Contacts</span
-        >
+      <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)">
+        <span [class]="activeLink == link.path ? 'active' : ''"
+          >{{ link.text }}
+        </span>
       </li>
     </ul>
 
@@ -69,32 +52,12 @@
     >
       <div class="content p-2">
         <ul>
-          <li (click)="onClickLink('/')">
-            <span [class]="activeLink == '/' ? 'active' : ''">Home </span>
+          <li *ngFor="let link of navLinks" (click)="onClickLink(link.path)">
+            <span [class]="activeLink == link.path ? 'active' : ''"
+              >{{ link.text }}
+            </span>
           </li>
-          <li (click)="onClickLink('/about')">
-            <span [class]="activeLink == '/about' ? 'active' : ''">About</span>
-          </li>
-          <li (click)="onClickLink('/pricing')">
-            <span [class]="activeLink == '/pricing' ? 'active' : ''"
-              >Pricing</span
-            >
-          </li>
-          <li (click)="onClickLink('/videos')">
-            <span [class]="activeLink == '/videos' ? 'active' : ''"
-              >Videos</span
-            >
-          </li>
-          <li (click)="onClickLink('/testimonials')">
-            <span [class]="activeLink == '/testimonials' ? 'active' : ''"
-              >Testimonials</span
-            >
-          </li>
-          <li (click)="onClickLink('/contacts')">
-            <span [class]="activeLink == '/contacts' ? 'active' : ''"
-              >Contacts</span
-            >
-          </li>
+
           <div class="d-flexcol">
             <button
               class="btn"
