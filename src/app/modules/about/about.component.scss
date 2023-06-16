@@ -1,3 +1,4 @@
+@import "../../../styles/variable";
 .section-one {
   flex: 2;
   display: flex;
@@ -13,10 +14,10 @@
   font-weight: 500;
 }
 .section-one-heading {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 0.9;
-  padding-bottom: 5px;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 .section-one-list {
   display: flex;
@@ -51,4 +52,58 @@
 .section-two-p {
   font-size: 14px;
   font-weight: 400;
+}
+@media #{$laptop-device} {
+  .top-heading {
+    font-size: 18px;
+  }
+  .section-one-image {
+    height: 350px;
+  }
+  .section-one-heading {
+    font-size: 30px;
+
+    padding-bottom: 10px;
+  }
+  .section-one-list {
+    font-size: 18px;
+  }
+  .section-two-main {
+    font-size: 18px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 10px;
+  }
+  .section-two-p {
+    font-size: 16px;
+  }
+}
+@media #{$extra-large-device} {
+  .top-heading {
+    font-size: 22px;
+  }
+  .section-one-image {
+    height: 390px;
+  }
+  .section-one-heading {
+    font-size: 36px;
+
+    padding-bottom: 10px;
+  }
+  .section-one-list {
+    font-size: 20px;
+  }
+  .section-two-main {
+    font-size: 22px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 10px;
+  }
+  .section-two-p {
+    font-size: 18px;
+  }
 }
