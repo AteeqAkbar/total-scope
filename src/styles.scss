@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./assets/fonts/AvenirNext\ forINTUIT\ W05\ Demi_web.woff.ttf")
+    format("truetype");
+  /* Add more font formats if available (e.g., woff, woff2) */
+}
 @import "~bootstrap/dist/css/bootstrap.css";
 
 // IMPORT OUR SCSS FILES
 @import "styles/variable";
 @import "styles/index";
+body {
+  font-family: "AvenirNext", sans-serif;
+}
