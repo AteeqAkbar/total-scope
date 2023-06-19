@@ -18,6 +18,7 @@ import {
   NavbarComponent,
   PublicLayoutComponent,
 } from './layouts';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,10 @@ import {
   ],
   imports: [
     BrowserModule,
+    NgxUiLoaderModule, // import NgxUiLoaderModule
+    // NgxUiLoaderRouterModule, // import NgxUiLoaderRouterModule. By default, it will show foreground loader.
+    // If you need to show background spinner, do as follow:
+    // NgxUiLoaderRouterModule.forRoot({ showForeground: false })
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,

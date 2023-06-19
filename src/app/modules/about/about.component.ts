@@ -1,11 +1,25 @@
-import { Component } from '@angular/core'
+import { NgxUiLoaderService } from 'ngx-ui-loader';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  isFirstLoad = true;
+
+  constructor(private ngxLoader: NgxUiLoaderService) {}
+  ngOnInit() {
+    // Show the loader only on the first load
+    if (this.isFirstLoad) {
+      this.ngxLoader.start();
+      this.isFirstLoad = false;
+      setTimeout(() => {
+        this.ngxLoader.stop();
+      }, 500);
+    }
+  }
   public items = [
     {
       text: 'Restoration contractor company ownership',
@@ -28,5 +42,5 @@ export class AboutComponent {
     {
       text: 'Licensed general contracting',
     },
-  ]
+  ];
 }
