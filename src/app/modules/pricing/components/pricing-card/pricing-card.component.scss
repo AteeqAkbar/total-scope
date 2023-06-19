@@ -1,3 +1,5 @@
+@import "../../../../../styles/variable";
+
 .pricing-card {
   background-color: white;
   height: 220px;
@@ -17,5 +19,42 @@
   }
   p {
     font-size: 12px;
+  }
+}
+
+@media #{$laptop-device} {
+  .pricing-card {
+    height: 254px;
+    width: 250px;
+    padding: 35px 15px 15px 10px;
+    img {
+      height: 52px;
+      width: 52px;
+    }
+    div {
+      padding-top: 10px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+@media #{$extra-large-device} {
+  .pricing-card {
+    height: 290px;
+    width: 280px;
+    padding: 45px 25px 25px 20px;
+    img {
+      height: 55px;
+      width: 55px;
+    }
+    div {
+      padding-top: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
