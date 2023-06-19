@@ -1,9 +1,9 @@
 // IMPORTING THE ANGULAR MODULES FOR POPUPS.
-import { NgModule } from '@angular/core'
+import { NgModule } from '@angular/core';
 
 // IMPORTING THE ANGULAR MODULES FOR DOING OPERATIONS ON URL.
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router'
-import { PublicLayoutComponent } from './layouts/public-layout/public-layout.component'
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PublicLayoutComponent } from './layouts/public-layout/public-layout.component';
 
 // DEFINING THE ROUTES FOR ANGULAR.
 const routes: Routes = [
@@ -13,15 +13,24 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
+        loadChildren: () =>
+          import('./modules/home/home.module').then((m) => m.HomeModule),
       },
       {
         path: 'about',
-        loadChildren: () => import('./modules/about/about.module').then((m) => m.AboutModule),
+        loadChildren: () =>
+          import('./modules/about/about.module').then((m) => m.AboutModule),
+      },
+      {
+        path: 'pricing',
+        loadChildren: () =>
+          import('./modules/pricing/pricing.module').then(
+            (m) => m.PricingModule
+          ),
       },
     ],
   },
-]
+];
 
 // AN ANGULAR DECORATOR THAT IDENTIFIES THE MODULE'S OWN COMPONENTS, DIRECTIVES, AND PIPES.
 // SO THAT EXTERNAL COMPONENTS CAN USE THEM.
