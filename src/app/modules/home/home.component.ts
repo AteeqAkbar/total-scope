@@ -12,11 +12,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // Show the loader only on the first load
     if (this.isFirstLoad) {
-      this.ngxLoader.start();
+      // this.ngxLoader.start();
       this.isFirstLoad = false;
-      setTimeout(() => {
-        this.ngxLoader.stop();
-      }, 500);
+      // setTimeout(() => {
+      //   this.ngxLoader.stop();
+      // }, 500);
     }
   }
   public items = [

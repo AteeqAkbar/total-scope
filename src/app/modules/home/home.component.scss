@@ -10,7 +10,14 @@
 .main-content {
   flex: 1;
 }
-
+.app-store {
+  height: 30px;
+  width: 90px;
+}
+.qr-image {
+  height: 90px;
+  width: 90px;
+}
 .main-one {
   flex: 2;
 
@@ -21,7 +28,6 @@
 .main {
   display: flex;
   justify-content: space-between;
-
 }
 .sectionOne {
   display: flex;
@@ -48,19 +54,37 @@
   flex-direction: column;
 }
 @media #{$laptop-device} {
+  .app-store {
+    height: 50px;
+    width: 120px;
+  }
+  .qr-image {
+    height: 120px;
+    width: 120px;
+  }
   .heading1 {
     font-size: 28px;
+    padding-bottom: 25px;
   }
   .qr {
-    height: 230px;
+    height: 250px;
   }
 }
 @media #{$extra-large-device} {
+  .app-store {
+    height: 50px;
+    width: 120px;
+  }
+  .qr-image {
+    height: 120px;
+    width: 120px;
+  }
   .heading1 {
     font-size: 34px;
+    padding-bottom: 40px;
   }
   .qr {
-    height: 230px;
+    height: 270px;
   }
 }
 
