@@ -1,0 +1,142 @@
+@import "../../../styles/variable";
+.section-one {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+.section-one-main {
+  flex: 3;
+  height: 100%;
+}
+.top-heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+.section-one-heading {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+.section-one-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 15px;
+  font-weight: 600;
+}
+.section-one-image {
+  object-fit: cover;
+  object-position: top;
+  height: 280px;
+  width: 100%;
+}
+.section-two {
+  background-color: green !important;
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  background-color: #f2f8fd;
+}
+.section-two-main {
+  font-size: 16px;
+  line-height: 0.8;
+  font-weight: 500;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-top: 10px;
+}
+.section-two-p {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media #{$laptop-device} {
+  .top-heading {
+    font-size: 18px;
+  }
+  .section-one-image {
+    height: 350px;
+  }
+  .section-one-heading {
+    font-size: 30px;
+
+    padding-bottom: 10px;
+  }
+  .section-one-list {
+    font-size: 18px;
+  }
+  .section-two-main {
+    font-size: 18px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 10px;
+  }
+  .section-two-p {
+    font-size: 16px;
+  }
+}
+@media #{$extra-large-device} {
+  .top-heading {
+    font-size: 22px;
+  }
+  .section-one-image {
+    height: 390px;
+  }
+  .section-one-heading {
+    font-size: 36px;
+
+    padding-bottom: 10px;
+  }
+  .section-one-list {
+    font-size: 20px;
+  }
+  .section-two-main {
+    font-size: 22px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 10px;
+  }
+  .section-two-p {
+    font-size: 18px;
+  }
+}
+////
+/// .contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  margin-top: 5px;
+  font-size: 14px;
+}
