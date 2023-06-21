@@ -46,6 +46,7 @@
   width: 300px;
   margin-bottom: 10px;
   height: 200px;
+  font-size: 16px;
   padding: 12px;
   border-radius: 20px;
   display: flex;
@@ -55,19 +56,22 @@
 }
 @media #{$laptop-device} {
   .app-store {
-    height: 50px;
-    width: 120px;
+    height: 31.06px;
+    width: 105.6px;
   }
   .qr-image {
-    height: 120px;
-    width: 120px;
+    height: 105.6px;
+    width: 105.6px;
   }
   .heading1 {
     font-size: 28px;
-    padding-bottom: 25px;
+    line-height: 34px;
+    padding-bottom: 39px;
   }
   .qr {
-    height: 250px;
+    height: 260px;
+    font-size: 20px;
+    width: 274px;
   }
 }
 @media #{$extra-large-device} {
@@ -81,7 +85,8 @@
   }
   .heading1 {
     font-size: 34px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
+
   }
   .qr {
     height: 270px;

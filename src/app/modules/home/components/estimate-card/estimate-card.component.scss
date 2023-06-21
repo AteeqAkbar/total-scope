@@ -23,27 +23,31 @@
 }
 @media #{$laptop-device} {
   .cards {
-    width: 180px;
+    margin-right: 24px;
+    width: 180.7px;
     img {
-      height: 60px;
-      width: 60px;
+      height: 64px;
+      width: 64px;
     }
     p {
-      font-size: 18px;
-      width: 170px;
+      font-size: 17px;
+      width: 180px;
+      line-height: 22px;
     }
   }
 }
 @media #{$extra-large-device} {
   .cards {
-    width: 200px;
+    margin-right: 24px;
+    width: 180.7px;
     img {
-      height: 70px;
-      width: 70px;
+      height: 64px;
+      width: 64px;
     }
     p {
-      font-size: 22px;
-      width: 190px;
+      font-size: 17px;
+      width: 180px;
+      line-height: 22px;
     }
   }
 }

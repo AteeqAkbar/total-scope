@@ -41,7 +41,9 @@
 }
 @media #{$laptop-device} {
   .heading {
-    font-size: 54px;
+    font-size: 56px;
+    line-height: 60.5px;
+    font-weight: 700;
   }
 
   .check-text {
