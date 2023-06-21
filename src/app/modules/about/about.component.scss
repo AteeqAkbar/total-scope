@@ -6,7 +6,7 @@
 }
 
 .section-one-main {
-  flex: 1;
+  flex: 1.2;
   height: 100%;
 }
 .top-heading {
@@ -62,15 +62,17 @@
     font-size: 22px;
   }
   .section-one-image {
-    height: 400px;
+    height: 100%;
   }
   .section-one-heading {
-    font-size: 44px;
+    font-size: 46px;
+    line-height: 49.5px;
 
     padding-bottom: 10px;
   }
   .section-one-list {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 22px;
     img {
       height: 24px;
       width: 24;
