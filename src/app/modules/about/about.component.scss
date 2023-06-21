@@ -25,6 +25,10 @@
   justify-content: start;
   font-size: 15px;
   font-weight: 600;
+  img {
+    height: 18px;
+    width: 18;
+  }
 }
 .section-one-image {
   object-fit: cover;
@@ -55,21 +59,25 @@
 }
 @media #{$laptop-device} {
   .top-heading {
-    font-size: 18px;
+    font-size: 22px;
   }
   .section-one-image {
-    height: 350px;
+    height: 400px;
   }
   .section-one-heading {
-    font-size: 30px;
+    font-size: 44px;
 
     padding-bottom: 10px;
   }
   .section-one-list {
     font-size: 18px;
+    img {
+      height: 24px;
+      width: 24;
+    }
   }
   .section-two-main {
-    font-size: 18px;
+    font-size: 28px;
     line-height: 0.8;
 
     padding-bottom: 5px;
@@ -77,7 +85,7 @@
     padding-top: 10px;
   }
   .section-two-p {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media #{$extra-large-device} {
@@ -85,15 +93,19 @@
     font-size: 22px;
   }
   .section-one-image {
-    height: 390px;
+    height: 440px;
   }
   .section-one-heading {
-    font-size: 36px;
+    font-size: 46px;
 
     padding-bottom: 10px;
   }
   .section-one-list {
     font-size: 20px;
+    img {
+      height: 24px;
+      width: 24;
+    }
   }
   .section-two-main {
     font-size: 22px;
