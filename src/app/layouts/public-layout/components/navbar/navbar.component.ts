@@ -38,7 +38,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     { path: '/pricing', text: 'Pricing' },
     { path: '/videos', text: 'Videos' },
     { path: 'Testimonials', text: 'Testimonials' },
-    { path: '/contacts', text: 'Contacts' },
+    { path: '/contact', text: 'Contact' },
   ]
 
   onClickLink(link: string) {

@@ -1,0 +1,123 @@
+<div class="d-flex flex-column h-100 boxrder">
+  <div class="section-one">
+    <div
+      class="d-flex align-items-center justify-content-center flex-column w-50 container text-center h-100 container"
+    >
+      <h1 class="top-heading">Contact Us</h1>
+      <p class="section-one-p">
+        Get in touch with us, share your thoughts, and learn how we can help<br />
+        your business with fast and effective claim resolution.
+      </p>
+      <form class="text-start w-100">
+        <div class="d-flex w-100" style="justify-content: space-between">
+          <div class="form-group pb-1">
+            <label for="FirstName">Farst Name*</label>
+            <input
+              type="text"
+              id="FirstName"
+              style="width: 320px"
+              formControlName="FirstName"
+              class="form-control"
+            />
+            <div class="invalid-feedback">First Name is required.</div>
+          </div>
+          <div class="form-group pb-1">
+            <label for="LastName">Last Name*</label>
+            <input
+              type="text"
+              style="width: 320px"
+              id="LastName"
+              formControlName="LastName"
+              class="form-control"
+            />
+            <div class="invalid-feedback">Last Name is required.</div>
+          </div>
+        </div>
+        <div class="d-flex w-100" style="justify-content: space-between">
+          <div class="form-group pb-1">
+            <label for="Email">Email*</label>
+            <input
+              type="email"
+              id="Email"
+              style="width: 320px"
+              formControlName="Email"
+              class="form-control"
+            />
+            <div class="invalid-feedback">Email is required.</div>
+          </div>
+          <div class="form-group pb-1">
+            <label for="phone">Phone*</label>
+            <input
+              type="text"
+              id="phone"
+              style="width: 320px"
+              formControlName="phone"
+              class="form-control"
+            />
+            <div class="invalid-feedback">Phone is required.</div>
+          </div>
+        </div>
+        <div class="form-group pb-1">
+          <label for="message">Your Message*</label>
+          <textarea
+            id="message"
+            formControlName="message"
+            style="width: 100%"
+            class="form-control"
+          ></textarea>
+          <div class="invalid-feedback">Message is required.</div>
+        </div>
+        <div class="d-flex w-100 align-items-center justify-content-center m-3">
+          <button
+            class="btn"
+            style="width: 250px; height: 41"
+            kendoButtonSize="large"
+            kendoButton
+            (click)="onButtonClick()"
+            themeColor="primary"
+          >
+            Submit Form
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="section-two">
+    <div class="container w-100 section-two-main">
+      <div class="d-flex align-items-center">
+        <img class="icon-image" src="assets/c-mail.svg" />&nbsp;&nbsp;
+        <div
+          class="d-flex align-items-start justify-content-center flex-column .section-two-p"
+        >
+          <p style="font-weight: 400 !important" class="p-0 m-0">Email</p>
+          <p style="font-weight: 600 !important" class="p-0 m-0">
+            contact@totalscope.com
+          </p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <img class="icon-image" src="assets/c-call.svg" />&nbsp;&nbsp;
+        <div
+          class="d-flex align-items-start justify-content-center flex-column .section-two-p"
+        >
+          <p style="font-weight: 400 !important" class="p-0 m-0">Email</p>
+          <p style="font-weight: 600 !important" class="p-0 m-0">
+            contact@totalscope.com
+          </p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <img class="icon-image" src="assets/c-address.svg" />&nbsp;&nbsp;
+        <div
+          class="d-flex align-items-start justify-content-center flex-column .section-two-p"
+        >
+          <p style="font-weight: 400 !important" class="p-0 m-0">Email</p>
+          <p style="font-weight: 600 !important" class="p-0 m-0">
+            contact@totalscope.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

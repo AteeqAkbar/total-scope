@@ -28,6 +28,13 @@ const routes: Routes = [
             (m) => m.PricingModule
           ),
       },
+      {
+        path: 'contact',
+        loadChildren: () =>
+          import('./modules/contact/contact.module').then(
+            (m) => m.ContactModule
+          ),
+      },
     ],
   },
 ];
