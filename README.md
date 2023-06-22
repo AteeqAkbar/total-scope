@@ -1,27 +1,66 @@
-# TotalScope
+# Totalscope
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+## Description
 
-## Development server
+This repository contains the code of totalscope web/admin panel that was developed using Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Dependencies
 
-## Code scaffolding
+- Node: 18.15.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- NPM: 9.5.0
 
-## Build
+- Angular CLI: 16.0.3
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- rxjs: 7.8.1
 
-## Running unit tests
+- typescript: 5.0.4
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+To run this project locally, please follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1.  Clone the repository to your local machine:
 
-## Further help
+    ```bash
+    git clone repository_url
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1.  Navigate to the project directory:
+
+    ```bash
+    cd totalscope_web
+
+1.  Install the dependencies:
+
+    ```bash
+    npm install
+
+## Configuration
+
+1. Create a copy of environments/environment.example file and update the variables as per your machine
+
+## Usage
+To start the server use,
+
+    # Start the app on port 4200
+    npm start
+
+OR,
+
+    ng serve
+    
+
+To create build of application use,
+
+
+    npm run build
+
+OR,
+
+    ng build
+
+
+## Documentation
+
+For programmers styleguide, Please visit:
+https://docs.google.com/document/d/1KxMXoKOygA25sfJKBcjwhJJB_IdHsWHBpWcUDjz8T6I/edit

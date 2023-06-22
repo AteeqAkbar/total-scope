@@ -1,0 +1,90 @@
+@import "../../../styles/variable";
+.section-one {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.section-one-main {
+  flex: 1;
+  height: 100%;
+}
+.top-heading {
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+}
+.section-one-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.section-one-p {
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.section-two {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  background-color: #f2f8fd;
+}
+.section-two-main {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media #{$laptop-device} {
+  .top-heading {
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  .section-one-heading {
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+  .section-one-p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 25px 0px 0px 0px;
+  }
+  .section-two-main {
+    font-size: 38px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  .section-two-p {
+    font-size: 16px;
+  }
+}
+@media #{$extra-large-device} {
+  .top-heading {
+    font-size: 38px;
+    line-height: 34px;
+  }
+
+  .section-one-heading {
+    font-size: 44px;
+    line-height: 33px;
+    padding-top: 20px;
+  }
+  .section-one-p {
+    padding-top: 25px 0px 0px 0px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .section-two-main {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .section-two-p {
+    font-size: 18px;
+  }
+}

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "totalscope_web_client": {
+    "web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/totalscope_web_client",
+            "outputPath": "dist/web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -25,12 +25,13 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss",
               {
                 "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.css"
               }
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -38,12 +39,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "5mb",
-                  "maximumError": "10mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10kb",
+                  "maximumError": "20kb"
                 }
               ],
               "outputHashing": "all"
@@ -63,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "totalscope_web_client:build:production"
+              "browserTarget": "web:build:production"
             },
             "development": {
-              "browserTarget": "totalscope_web_client:build:development"
+              "browserTarget": "web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "totalscope_web_client:build"
+            "browserTarget": "web:build"
           }
         },
         "test": {
@@ -85,15 +86,19 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss",
               {
-                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
-              },
-              "src/styles.scss"
+                "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.css"
+              }
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
