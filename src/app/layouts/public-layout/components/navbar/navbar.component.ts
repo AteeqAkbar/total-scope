@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     { path: '/about', text: 'About' },
     { path: '/pricing', text: 'Pricing' },
     { path: '/videos', text: 'Videos' },
-    { path: 'Testimonials', text: 'Testimonials' },
+    { path: 'testimonials', text: 'Testimonials' },
     { path: '/contact', text: 'Contact' },
   ]
 
