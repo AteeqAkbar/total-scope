@@ -33,7 +33,8 @@ ul {
   display: flex;
 }
 li {
-  margin: 0 9px;
+  margin: 0 16px 0 16px;
+  font-family: "AvenirNext-Medium";
 }
 li:hover {
   color: #306fd5;
@@ -81,9 +82,16 @@ li:hover {
   .links {
     font-size: 16px !important;
   }
+  li {
+    margin: 0 21px 0 21px;
+  }
 }
 @media #{$extra-large-device} {
   .links {
     font-size: 18px !important;
   }
+  li {
+    margin: 0 21px 0 21px;
+  }
 }
+ 

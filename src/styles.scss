@@ -1,16 +1,73 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+// @font-face {
+//   font-family: "AvenirNext";
+//   src: url("./assets/fonts/AvenirNextforINTUIT-Regular.otf") format("truetype");
+// }
 @font-face {
-    font-family: "AvenirNext";
-    src: url("./assets/fonts/AvenirNext\ forINTUIT\ W05\ Demi_web.woff.ttf")
-      format("truetype");
-  }
-
+  font-family: "AvenirNext";
+  src: local("AvenirNext"),
+    url("./assets/fonts/AvenirNextforINTUIT-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Heavy";
+  src: local("AvenirNext-Heavy"),
+    url("./assets/fonts/AvenirNextforINTUIT-Heavy.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-BoldIt";
+  src: local("AvenirNext-BoldIt"),
+    url("./assets/fonts/AvenirNextforINTUIT-BoldIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: local("AvenirNext-Demi"),
+    url("./assets/fonts/AvenirNextforINTUIT-Demi.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-DemiIt";
+  src: local("AvenirNext-DemiIt"),
+    url("./assets/fonts/AvenirNextforINTUIT-DemiIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-HeavyIt";
+  src: local("AvenirNext-HeavyIt"),
+    url("./assets/fonts/AvenirNextforINTUIT-HeavyIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Italic";
+  src: local("AvenirNext-Italic"),
+    url("./assets/fonts/AvenirNextforINTUIT-Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Medium";
+  src: local("AvenirNext-Medium"),
+    url("./assets/fonts/AvenirNextforINTUIT-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-MediumIt";
+  src: local("AvenirNext-MediumIt"),
+    url("./assets/fonts/AvenirNextforINTUIT-MediumIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Thin";
+  src: local("AvenirNext-Thin"),
+    url("./assets/fonts/AvenirNextforINTUIT-Thin.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-ThinIt";
+  src: local("AvenirNext-ThinIt"),
+    url("./assets/fonts/AvenirNextforINTUIT-ThinIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: local("AvenirNext-Bold"),
+    url("./assets/fonts/AvenirNextforINTUIT-Bold.otf") format("truetype");
+}
 // IMPORT OUR SCSS FILES
 @import "styles/variable";
 @import "styles/index";
 
-
 body {
-    font-family: "AvenirNext", sans-serif;
+  font-family: "AvenirNext", sans-serif;
 }

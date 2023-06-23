@@ -62,12 +62,16 @@ li:hover {
   flex-direction: column;
 }
 .t-heading-one {
+  font-family: "AvenirNext-Bold";
+
   font-size: 20;
   font-weight: 700;
   line-height: 15.5px;
 }
 .t-p {
-  font-size: 15;
+  font-family: "AvenirNext";
+
+  font-size: 15px;
   padding: 5px;
   font-weight: 500;
 }
@@ -76,12 +80,16 @@ li:hover {
   width: 150.67px;
 }
 .t-p-name {
-  font-size: 15;
+  font-family: "AvenirNext-Medium";
+  padding: 2px;
+  font-size: 15px;
   font-weight: 600;
   //   line-height: 10px;
 }
 .t-p-text {
-  font-size: 15;
+  font-family: "AvenirNext";
+
+  font-size: 15px;
   font-weight: 500;
   line-height: 5px;
 }
@@ -94,10 +102,11 @@ li:hover {
     width: 15.5;
   }
 }
-t-commemts {
+.t-commemts {
+  font-family: "AvenirNext";
   font-size: 15;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 22px;
 }
 
 @media #{$laptop-device} {
