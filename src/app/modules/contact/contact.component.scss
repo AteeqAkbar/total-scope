@@ -1,4 +1,5 @@
 @import "../../../styles/variable";
+
 .section-one {
   flex: 2;
   display: flex;
@@ -57,6 +58,53 @@ label {
   -moz-border-radius: 77px;
   -ms-border-radius: 77px;
   -o-border-radius: 77px;
+}
+@media only screen and (max-width: 768px) {
+  .about-main {
+    flex-direction: column;
+  }
+  .c-fields {
+    flex-direction: column;
+    input {
+      width: 100% !important;
+    }
+  }
+  .c-width {
+    width: 100% !important;
+  }
+  .section-two-main {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .about-main {
+    flex-direction: column;
+  }
+  .c-fields {
+    input {
+      width: 300px !important;
+    }
+  }
+  .c-width {
+    width: 100% !important;
+  }
+  .section-two-main {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
 }
 
 @media #{$laptop-device} {
