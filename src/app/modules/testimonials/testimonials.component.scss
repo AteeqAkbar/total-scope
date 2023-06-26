@@ -10,7 +10,6 @@ kendo-scrollview.k-scrollview,
   display: inline-block;
   overflow: auto !important;
   white-space: initial !important;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -107,6 +106,20 @@ li:hover {
   font-size: 15;
   font-weight: 400;
   line-height: 22px;
+}
+@media only screen and (max-width: 768px) {
+  .t-sub-main {
+    height: auto;
+    padding-top: 20px;
+  }
+  .t-p {
+    width: 286px;
+    text-align: center;
+  }
+  .t-image {
+    width: 212.67px;
+    height: 36.86px;
+  }
 }
 
 @media #{$laptop-device} {
