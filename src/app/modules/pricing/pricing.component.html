@@ -1,6 +1,8 @@
 <div class="d-flex flex-column h-100 boxrder">
   <div class="section-one">
-    <div class="d-flex flex-column align-items-center text-center w-100 container">
+    <div
+      class="d-flex flex-column align-items-center text-center w-100 container"
+    >
       <h3 class="top-heading">Single Family Pricing Tiers</h3>
       <h1 class="section-one-heading">
         Start with us and your first file
@@ -23,10 +25,18 @@
   <br />
 
   <div class="section-two p-2">
-    <div class="d-flex flex-column align-items-center text-center w-100 container">
+    <div
+      class="d-flex flex-column align-items-center text-center w-100 container-md"
+    >
       <div class="section-two-main">Pricing Tiers</div>
-      <div style="justify-content: space-evenly" class="d-flex align-items-center w-100">
-        <pricing-card *ngFor="let item of items" [pricingCardData]="item"></pricing-card>
+      <div
+        style="justify-content: space-evenly"
+        class="d-flex align-items-center w-100 card-flex"
+      >
+        <pricing-card
+          *ngFor="let item of items"
+          [pricingCardData]="item"
+        ></pricing-card>
       </div>
     </div>
   </div>

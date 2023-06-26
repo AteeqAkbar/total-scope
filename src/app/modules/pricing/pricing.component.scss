@@ -41,6 +41,50 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 992px) {
+  .top-heading {
+    padding-top: 15px;
+    font-weight: 500;
+    width: 170px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .section-one-heading {
+    font-family: "AvenirNext";
+    width: 316px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+
+    text-align: center;
+  }
+  .section-one-p {
+    margin-bottom: 5px;
+    width: 315px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .section-two {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    background-color: #f2f8fd;
+  }
+  .section-two-main {
+    font-family: "AvenirNext-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 41px;
+  }
+  .card-flex {
+    flex-direction: column;
+  }
+}
 
 @media #{$laptop-device} {
   .top-heading {
