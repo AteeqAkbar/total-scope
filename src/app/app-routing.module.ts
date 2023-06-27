@@ -36,6 +36,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'videos',
+        loadChildren: () =>
+          import('./modules/videos/videos.module').then(
+            (m) => m.VideosModule
+          ),
+      },
+      {
         path: 'testimonials',
         loadChildren: () =>
           import('./modules/testimonials/testimonials.module').then(
