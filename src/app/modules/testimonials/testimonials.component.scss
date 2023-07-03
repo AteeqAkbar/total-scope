@@ -26,6 +26,15 @@ li:hover {
   opacity: 0.7;
   outline-width: 0;
 }
+.k-svg-icon > svg {
+  border-radius: 23px;
+  fill: currentColor;
+  flex: 1 1 auto;
+  padding: 10px;
+  color: #484848;
+  /* margin: 20px; */
+  background-color: #f0f0f0;
+}
 .k-scrollview-next,
 .k-scrollview-prev :hover {
   color: black;
@@ -37,6 +46,14 @@ li:hover {
 
 .k-scrollview-wrap {
   margin: 0 auto;
+}
+
+.quote-p {
+  position: relative;
+  padding: 70px;
+}
+.quote {
+  height: 60px;
 }
 .demo-title {
   position: absolute;
@@ -119,6 +136,30 @@ li:hover {
   .t-image {
     width: 212.67px;
     height: 36.86px;
+  }
+  .quote-p {
+    padding: 0px;
+  }
+  .quote {
+    display: none;
+  }
+}
+@media only screen and (min-width: 679px) and (max-width: 999px) {
+
+  .quote-p {
+    padding: 0px;
+  }
+  .quote {
+    display: none;
+  }
+}
+@media only screen and  (max-height: 872px) {
+
+  .quote-p {
+    padding: 0px;
+  }
+  .quote {
+    display: none;
   }
 }
 
