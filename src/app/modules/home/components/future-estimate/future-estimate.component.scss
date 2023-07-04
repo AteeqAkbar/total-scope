@@ -11,6 +11,28 @@
   line-height: 1;
   font-family: "AvenirNext-Bold";
 }
+.c-btn {
+  display: flex;
+  width: 178px;
+  height: 48px;
+  font-weight: 400;
+  padding: 12px 31.5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.primary-c-btn {
+  background-color: $primary;
+  // padding: 20px;
+  border-radius: 48px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+.primary-c-btn:hover {
+  background-color: #306fd5d7;
+}
 .left {
   flex: 0.7;
   padding: 10px 0px 10px 0px;
@@ -97,7 +119,7 @@
     flex: auto;
     height: 250px;
     width: inherit;
-    padding-bottom: 10px;
+    padding: 30px 0px;
   }
   .left {
     padding: 10px;
