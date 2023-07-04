@@ -13,13 +13,13 @@
   padding-top: 15px;
   font-weight: 600;
   font-size: 25px;
-  line-height: 25px;
+  line-height: 22px;
 }
 .section-one-heading {
   font-family: "AvenirNext-Bold";
   font-weight: 700;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 30px;
 }
 .section-one-p {
   font-weight: 300;
@@ -32,6 +32,8 @@
   flex: 2;
   display: flex;
   align-items: center;
+  padding: 10px 0px 10px 0px;
+
   background-color: #f2f8fd;
 }
 .section-two-main {
@@ -107,6 +109,9 @@
     line-height: 41px;
     margin-bottom: 18px;
   }
+  .section-two {
+    padding: 30px 0px 36px 0px;
+  }
   .section-two-p {
     font-size: 16px;
   }
@@ -116,7 +121,9 @@
     font-size: 36px;
     line-height: 30px;
   }
-
+  .section-two {
+    padding: 30px 0px 36px 0px;
+  }
   .section-one-heading {
     font-size: 42px;
     line-height: 45px;
