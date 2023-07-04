@@ -1,13 +1,20 @@
 @import "../../../styles/variable";
 
 .section-one {
-  flex: 2;
+  // flex: 2;
   display: flex;
   align-items: center;
 }
+.inputs-filed {
+  width: 320px;
+  margin-bottom: 10px;
+}
 
+.btn-sumbit {
+  background-color: $primary !important;
+}
 .section-one-main {
-  flex: 1;
+  // flex: 1;
   height: 100%;
 }
 .top-heading {
@@ -15,15 +22,18 @@
 
   font-size: 30px;
   font-weight: 700;
-  padding-top: 18px;
-  line-height: 49.5px;
+  padding-top: 5px;
+  line-height: 30.5px;
 }
 
 .section-one-p {
   font-family: "AvenirNext";
   font-size: 15px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 18px;
+}
+.text-area {
+  width: 690px !important;
 }
 
 label {
@@ -34,14 +44,13 @@ label {
   line-height: 22px;
 }
 .section-two {
-  flex: 0.7;
+  // flex: 0.7;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px 0px 0px 5px;
 }
 .section-two-p {
-  font-size: 15px;
   line-height: 22px;
 }
 .icon-image {
@@ -95,6 +104,12 @@ label {
   .c-width {
     width: 100% !important;
   }
+  .text-area {
+    width: 651px !important;
+    textarea {
+      height: 149px !important;
+    }
+  }
   .section-two-main {
     display: flex;
     flex-direction: column;
@@ -106,24 +121,50 @@ label {
     -o-border-radius: 8px;
   }
 }
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+  .about-main {
+    flex-direction: column;
+  }
+  .c-fields {
+    input {
+      width: 300px !important;
+    }
+  }
+  .c-width {
+    width: 100% !important;
+  }
+  .text-area {
+    width: 651px !important;
+    // height: 149px !important
+  }
+}
 
 @media #{$laptop-device} {
   .top-heading {
     font-size: 46px;
     font-weight: 700;
     padding-top: 24px;
+    padding-bottom: 24px;
     line-height: 49.5px;
   }
   .section-one-p {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
+    padding: 0px 0px 38px 0px;
+    margin: 0;
   }
 
   label {
     font-size: 17px;
     font-weight: 600;
     line-height: 22px;
+  }
+  .text-area {
+    width: 690px;
+    textarea {
+      height: 149px !important;
+    }
   }
   .section-two {
     flex: 0.3;
@@ -143,7 +184,9 @@ label {
   .section-two-main {
     background-color: #f2f8fd;
     border-radius: 77px;
-    padding: 10px;
+    padding: 26px 31px;
+    // margin-top: 34px;
+    margin: 34px 15px 15px 15px !important;
     display: flex;
     justify-content: space-around;
   }
@@ -153,12 +196,15 @@ label {
     font-size: 46px;
     font-weight: 700;
     padding-top: 24px;
+    padding-bottom: 24px;
     line-height: 49.5px;
   }
   .section-one-p {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
+    padding: 0px 0px 38px 0px;
+    margin: 0;
   }
 
   label {
@@ -184,7 +230,9 @@ label {
   .section-two-main {
     background-color: #f2f8fd;
     border-radius: 77px;
-    padding: 10px;
+    padding: 26px 31px;
+    // margin-top: 34px;
+    margin: 34px 15px 15px 15px !important;
     display: flex;
     justify-content: space-around;
   }
