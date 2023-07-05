@@ -145,7 +145,6 @@ li:hover {
   }
 }
 @media only screen and (min-width: 679px) and (max-width: 999px) {
-
   .quote-p {
     padding: 0px;
   }
@@ -153,13 +152,19 @@ li:hover {
     display: none;
   }
 }
-@media only screen and  (max-height: 872px) {
-
+@media only screen and (max-height: 872px) {
+  .q-p {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .quote-p {
-    padding: 0px;
+    // padding: 0px;
   }
   .quote {
-    display: none;
+    // display: none;
   }
 }
 
