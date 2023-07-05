@@ -20,9 +20,12 @@
   }
   .center-justify {
     flex-direction: column;
+    padding: 29.5px 38.48px 41.5px 38.48px;
+    gap: 21px;
   }
   .footer {
-    margin-top: 20px;
+    // margin-top: 20px;
+    padding: 0px;
   }
   .check-image {
     height: 15px;
