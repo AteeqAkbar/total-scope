@@ -35,7 +35,11 @@
     <button
       kendoButton
       fillMode="flat"
-      [style]="show ? 'background-color: #0c1d3e !important' : ''"
+      [style]="
+        show
+          ? 'background-color: #0c1d3e !important;height: 40px;width: 40px; '
+          : 'height: 40px;width: 40px;'
+      "
       class="overflow-button d-lg-none btt-icons d-flex align-self-center justify-content-center"
       #anchor
       (click)="onToggle()"
