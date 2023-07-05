@@ -40,9 +40,7 @@
       #anchor
       (click)="onToggle()"
     >
-      <kendo-svg-icon
-        [icon]="show ? allIcons.xIcon : allIcons.menuIcon"
-      ></kendo-svg-icon>
+      <img [src]="show ? 'assets/cross.svg' : 'assets/menu.svg'" alt="" />
     </button>
     <kendo-popup
       [popupAlign]="popupAlign"
