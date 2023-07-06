@@ -18,6 +18,7 @@
 .section-one-heading {
   font-family: "AvenirNext-Bold";
   font-weight: 700;
+  color: #303030;
   font-size: 30px;
   line-height: 30px;
 }
@@ -49,6 +50,8 @@
     font-weight: 500;
     width: 170px;
     font-size: 28px;
+    padding-top: 37.27px;
+    padding-bottom: 22px;
     line-height: 34px;
   }
   .section-one-heading {
@@ -57,6 +60,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
+    padding-bottom: 16px;
     line-height: 41px;
 
     text-align: center;
@@ -71,8 +75,10 @@
   }
 
   .section-two {
-    flex: 2;
+    margin-top: 45.73px;
+    // flex: 2;
     display: flex;
+    padding: 30px 0px 53px 0px;
     align-items: center;
     background-color: #f2f8fd;
   }
@@ -82,6 +88,7 @@
     font-weight: 700;
     font-size: 38px;
     line-height: 41px;
+    margin-bottom: 24px;
   }
   .card-flex {
     flex-direction: column;
@@ -89,25 +96,41 @@
 }
 
 @media #{$laptop-device} {
+  .section-one {
+    flex: none;
+    padding-top: 24.27px;
+    padding-bottom: 40.63px;
+  }
   .top-heading {
     font-size: 36px;
     line-height: 30px;
   }
 
   .section-one-heading {
-    font-size: 42px;
-    line-height: 45px;
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 64px;
+  }
+  .p-pricing {
+    padding: 20px 0px 0px 0px;
   }
   .section-one-p {
     font-size: 18px;
     line-height: 25px;
-    padding-top: 20px 0px 0px 0px;
+    // padding: 20px 0px 0px 0px;
+  }
+  .p-pricing-b {
+    // padding-bottom: 40.63px;
+  }
+  .section-two {
+    flex: none;
   }
   .section-two-main {
     font-size: 38px;
     line-height: 41px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
   .section-two {
     padding: 30px 0px 36px 0px;
@@ -117,27 +140,45 @@
   }
 }
 @media #{$extra-large-device} {
+  .section-one {
+    flex: 1;
+    padding-top: 24.27px;
+    padding-bottom: 40.63px;
+  }
   .top-heading {
     font-size: 36px;
     line-height: 30px;
   }
-  .section-two {
-    padding: 30px 0px 36px 0px;
-  }
+
   .section-one-heading {
-    font-size: 42px;
-    line-height: 45px;
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 64px;
+  }
+  .p-pricing {
+    padding: 20px 0px 0px 0px;
   }
   .section-one-p {
     font-size: 18px;
     line-height: 25px;
-    padding-top: 25px 0px 0px 0px;
+    // padding: 20px 0px 0px 0px;
+  }
+  .p-pricing-b {
+    // padding-bottom: 40.63px;
+  }
+  .section-two {
+    // flex: none;
   }
   .section-two-main {
     font-size: 38px;
     line-height: 41px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .section-two {
+    flex: 2;
+    padding: 30px 0px 36px 0px;
   }
   .section-two-p {
     font-size: 16px;
