@@ -8,17 +8,15 @@
   justify-content: space-between;
 }
 .footer {
-// height: 80px;
-padding: 28.5px 69px 27.5px 67.276px;
-justify-content: center;
-align-items: flex-start;
-gap: 668.684px;
+  // height: 80px;
+  padding: 20.5px 69px 20.5px 67.276px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 668.684px;
   display: flex;
   align-items: center;
   border-top: 2px solid #f2f8fd;
   width: 100%;
-  
-  
 }
 @media only screen and (max-width: 768px) {
   .center {
