@@ -1,4 +1,13 @@
 @import "../../../styles/variable";
+
+
+
+.qr-image {
+  height: 105.6px;
+  width: 105.6px;
+}
+
+
 .howe-wrapper {
   width: 100% !important;
 
@@ -11,14 +20,12 @@
   // flex: 1;
 }
 .app-store {
-  height: 30px;
-  width: 90px;
+  height: 31.06px;
+  width: 105.6px;
 }
-.qr-image {
-  height: 90px;
-  width: 90px;
-}
+
 .main-one {
+   padding: 17px 0px;
   // flex: 2;
 
   // display: flex;
@@ -26,6 +33,8 @@
   // align-items: center;
 }
 .main {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,16 +46,21 @@
   display: flex;
 }
 .heading1 {
-  font-size: 22px;
-  line-height: 1;
+ 
+  width: 422.5px;
+  padding-bottom: 39px;
+  font-size: 28px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 34px;
 }
 .qr {
+  margin-top: 20px;
+  height: 260px;
+  font-size: 20px;
+  width: 274px;
   background-color: #f2f8fd;
-  width: 300px;
   margin-bottom: 10px;
-  height: 190px;
-  font-size: 16px;
   padding: 12px;
   border-radius: 20px;
   display: flex;
@@ -56,87 +70,83 @@
   flex-direction: column;
 }
 
-/* Styles for screens with a height up to 600 pixels */
-@media screen and (max-height: 600px) {
-  body {
-    font-size: 14px;
-    /* Add specific styles for screens with a height up to 600 pixels */
+
+/* Large (LG) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .main-one {
+        // flex: 2;
+        padding: 17px 0px;
+      }
+      .main {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+      }
+      .app-store {
+        height: 31.06px;
+        width: 105.6px;
+      }
+      .qr-image {
+        height: 105.6px;
+        width: 105.6px;
+      }
+      .heading1 {
+        width: 422.5px;
+        padding-bottom: 39px;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+      }
+      .qr {
+        align-self:center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        height: 260px;
+        font-size: 20px;
+        width: 274px;
+      }
+}
+
+/* Extra Large (XL) */
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+  .main-one {
+    // flex: 2;
+    padding: 17px 0px;
+  }
+  .main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .app-store {
+    height: 31.06px;
+    width: 105.6px;
+  }
+  .qr-image {
+    height: 105.6px;
+    width: 105.6px;
+  }
+  .heading1 {
+    width: 422.5px;
+    padding-bottom: 39px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  .qr {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 260px;
+    font-size: 20px;
+    width: 274px;
   }
 }
 
-/* Styles for screens with a height between 601 and 900 pixels */
-@media screen and (min-height: 601px) and (max-height: 800px) {
-  .main-one {
-    // flex: 2;
-    padding: 10px 0px;
-    background-color: tan;
-  }
-  .main {
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  .app-store {
-    height: 31.06px;
-    width: 105.6px;
-  }
-  .qr-image {
-    height: 105.6px;
-    width: 105.6px;
-  }
-  .heading1 {
-    width: 422.5px;
-    padding-bottom: 16px;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 29px;
-  }
-  .qr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 250px;
-    font-size: 20px;
-    width: 274px;
-  }
-}
-@media screen and (min-height: 801px) and (max-height: 900px) {
-  .main-one {
-    flex: 2;
-    padding: 10px 0px;
-   
-  }
-  .main-content {
-    flex: 1;
-  }
-  .main {
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  .app-store {
-    height: 31.06px;
-    width: 105.6px;
-  }
-  .qr-image {
-    height: 105.6px;
-    width: 105.6px;
-  }
-  .heading1 {
-    width: 422.5px;
-    padding-bottom: 16px;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 29px;
-  }
-  .qr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 250px;
-    font-size: 20px;
-    width: 274px;
-  }
-}
-@media screen and (min-height: 901px) and (max-height: 957px) {
+
+
+
+@media screen and (min-height: 900px) and (max-height: 957px) {
   .main-one {
     // flex: 2;
     padding: 10px 0px;
@@ -272,7 +282,7 @@
 //   }
 // }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .main {
     flex-direction: column;
     align-items: center;

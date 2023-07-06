@@ -6,9 +6,10 @@
   align-items: center;
 }
 .heading {
-  font-size: 40px;
+  font-size: 56px;
+  line-height: 60.5px;
   font-weight: 700;
-  line-height: 1;
+  margin-bottom: 21px;
   font-family: "AvenirNext-Bold";
 }
 .c-btn {
@@ -42,16 +43,21 @@
   padding-right: 0px;
   padding-top: 0px;
   padding: 0px 0px 0px 20px;
-  height: 280px;
+  height: 340px;
+  width: 700px;
 }
 .check-text {
-  font-family: "AvenirNext-Medium";
+  font-size: 17px;
+  font-family: "AvenirNext";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
 }
 .sub-text {
-  // width: 85%;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
+  font-size: 22px;
+  line-height: 28px;
+  width: 469.659px;
+  margin-bottom: 35.94px;
 }
 .btn-section {
   display: flex;
@@ -59,88 +65,113 @@
   align-items: center;
 }
 .check-image {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
 }
-/* Styles for screens with a height up to 600 pixels */
-@media screen and (max-height: 600px) {
-  body {
-    font-size: 14px;
-    /* Add specific styles for screens with a height up to 600 pixels */
+
+/* Extra Large (XL) */
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+  .heading {
+    font-size: 56px;
+    line-height: 60.5px;
+    font-weight: 700;
+    margin-bottom: 21px;
+  }
+
+  .check-text {
+    font-size: 17px;
+    font-family: "AvenirNext";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .right {
+    height: 340px !important;
+    width: 700px !important;
+  }
+  .sub-text {
+    font-size: 22px;
+    line-height: 28px;
+    width: 469.659px;
+    margin-bottom: 35.94px;
+  }
+  .check-image {
+    height: 24px;
+    width: 24px;
   }
 }
 
 /* Styles for screens with a height between 601 and 900 pixels */
-@media screen and (min-height: 601px) and (max-height: 800px) {
+// @media screen and (min-height: 601px) and (max-height: 800px) {
+//   .heading {
+//     font-size: 56px;
+//     line-height: 60.5px;
+//     font-weight: 700;
+//     margin-bottom: 21px;
+//     background-color: red;
+//   }
+
+//   .check-text {
+//     font-size: 17px;
+//     font-family: "AvenirNext";
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 22px;
+//   }
+
+//   .right {
+//     height: 340px !important;
+//     width: 700px !important;
+//   }
+//   .sub-text {
+//     font-size: 22px;
+//     line-height: 28px;
+//     width: 469.659px;
+//     margin-bottom: 35.94px;
+//   }
+//   .check-image {
+//     height: 24px;
+//     width: 24px;
+//   }
+// }
+// @media screen and (min-height: 801px) and (max-height: 900px) {
+//   .heading {
+//     font-size: 56px;
+//     line-height: 60.5px;
+//     font-weight: 700;
+//     margin-bottom: 21px;
+//   }
+
+//   .check-text {
+//     font-size: 17px;
+//     font-family: "AvenirNext";
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 22px;
+//   }
+
+//   .right {
+//     height: 340px !important;
+//     width: 700px !important;
+//   }
+//   .sub-text {
+//     font-size: 22px;
+//     line-height: 28px;
+//     width: 469.659px;
+//     margin-bottom: 35.94px;
+//   }
+//   .check-image {
+//     height: 24px;
+//     width: 24px;
+//   }
+// }
+@media screen and (min-height: 901px) and (max-height: 957px) and (min-width: 1400px) {
   .heading {
     font-size: 56px;
     line-height: 60.5px;
     font-weight: 700;
     margin-bottom: 21px;
-    background-color: red;
-  }
-
-  .check-text {
-    font-size: 17px;
-    font-family: "AvenirNext";
-    font-style: normal;
-    font-weight: 600;
-    line-height: 22px;
-  }
-
-  .right {
-    height: 340px !important;
-    width: 700px !important;
-  }
-  .sub-text {
-    font-size: 22px;
-    line-height: 28px;
-    width: 469.659px;
-    margin-bottom: 35.94px;
-  }
-  .check-image {
-    height: 24px;
-    width: 24px;
-  }
-}
-@media screen and (min-height: 801px) and (max-height: 900px) {
-  .heading {
-    font-size: 56px;
-    line-height: 60.5px;
-    font-weight: 700;
-    margin-bottom: 21px;
-  }
-
-  .check-text {
-    font-size: 17px;
-    font-family: "AvenirNext";
-    font-style: normal;
-    font-weight: 600;
-    line-height: 22px;
-  }
-
-  .right {
-    height: 340px !important;
-    width: 700px !important;
-  }
-  .sub-text {
-    font-size: 22px;
-    line-height: 28px;
-    width: 469.659px;
-    margin-bottom: 35.94px;
-  }
-  .check-image {
-    height: 24px;
-    width: 24px;
-  }
-}
-@media screen and (min-height: 901px) and (max-height: 957px) {
-  .heading {
-    font-size: 56px;
-    line-height: 60.5px;
-    font-weight: 700;
-    margin-bottom: 21px;
-    
   }
 
   .check-text {
@@ -168,7 +199,7 @@
 }
 
 /* Styles for screens with a height above 900 pixels */
-@media screen and (min-height: 958px) {
+@media screen and (min-height: 958px) and (min-width: 1400px) {
   .heading {
     font-size: 56px;
     line-height: 60.5px;
@@ -200,73 +231,6 @@
   }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1399px) and (min-height: 600px) and (max-height: 900px) {
-//   /* CSS rules specific to screens with width between 768 and 1399 pixels and height between 600 and 900 pixels */
-//   .heading {
-//     font-size: 50px;
-//     line-height: 40.5px;
-//     font-weight: 700;
-//     margin-bottom: 14px;
-//   }
-//   .c-btn {
-//     height: 40px;
-//   }
-
-//   .check-text {
-//     font-size: 17px;
-//     font-family: "AvenirNext";
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: 16px;
-//   }
-
-//   .right {
-//     height: 280px !important;
-//     width: 749px !important;
-//   }
-//   .sub-text {
-//     font-size: 22px;
-//     line-height: 22px;
-//     width: 469.659px;
-//     margin-bottom: 18.94px;
-//   }
-//   .check-image {
-//     height: 24px;
-//     width: 24px;
-//   }
-// }
-// @media #{$laptop-device} {
-//   .heading {
-//     font-size: 56px;
-//     line-height: 60.5px;
-//     font-weight: 700;
-//     margin-bottom: 21px;
-//   }
-
-//   .check-text {
-//     font-size: 17px;
-//     font-family: "AvenirNext";
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: 22px;
-//   }
-
-//   .right {
-//     height: 421px !important;
-//     width: 749px !important;
-//   }
-//   .sub-text {
-//     font-size: 22px;
-//     line-height: 28px;
-//     width: 469.659px;
-//     margin-bottom: 35.94px;
-//   }
-//   .check-image {
-//     height: 24px;
-//     width: 24px;
-//   }
-// }
-
 // @media #{$extra-large-device} {
 //   .heading {
 //     font-size: 56px;
@@ -289,7 +253,7 @@
 //     width: 30px;
 //   }
 // }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .hero {
     flex-direction: column;
     text-align: center;
