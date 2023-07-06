@@ -6,17 +6,15 @@
 }
 .center-justify {
   justify-content: space-between;
+  height: 80px;
+  padding: 28.5px 0px 27.5px 0px;
 }
 .footer {
-  // height: 80px;
-  padding: 20.5px 69px 20.5px 67.276px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 668.684px;
   display: flex;
   align-items: center;
   border-top: 2px solid #f2f8fd;
   width: 100%;
+  // padding: 8px 0px;
 }
 @media only screen and (max-width: 768px) {
   .center {
@@ -24,8 +22,9 @@
   }
   .center-justify {
     flex-direction: column;
-    padding: 29.5px 38.48px 41.5px 38.48px;
+    padding: 29.5px 38.48px 41.5px 38.48px !important;
     gap: 21px;
+    height: auto;
   }
   .footer {
     // margin-top: 20px;

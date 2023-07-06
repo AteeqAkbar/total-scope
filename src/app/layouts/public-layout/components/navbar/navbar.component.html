@@ -1,6 +1,4 @@
 <kendo-appbar class="navhight container p-0" position="top">
-  <kendo-appbar-spacer width="32px"></kendo-appbar-spacer>
-
   <kendo-appbar-section class="appbar-items show-titles">
     <kendo-appbar-section class="title">
       <img src="assets/logo.svg" alt="logo" />
@@ -53,7 +51,7 @@
       *ngIf="show"
       [margin]="margin"
     >
-      <div class="content p-2">
+      <div class="content popup p-2">
         <ul>
           <li
             *ngFor="let link of navLinks"
@@ -67,7 +65,17 @@
           <div class="d-flexcol">
             <button
               size="small"
-              class="btn mb-2"
+              class="btn"
+              style="
+                margin-top: 11px;
+                margin-bottom: 12px;
+                display: flex;
+                width: 160px;
+                height: 32px;
+                padding: 5px 0px;
+                justify-content: center;
+                align-items: center;
+              "
               kendoButton
               (click)="onButtonClick()"
               fillMode="outline"
@@ -75,15 +83,19 @@
               Login
             </button>
 
-            <button
-              size="small"
-              class="btn"
-              kendoButton
+            <div
+              style="
+                display: flex;
+                width: 160px;
+                height: 32px;
+                padding: 4px 35.5px;
+                align-items: center;
+              "
               (click)="onButtonClick()"
-              themeColor="primary"
+              class="d-flex align-items-center c-btn primary-c-btn"
             >
-              Register
-            </button>
+              <span>Register</span> <img src="assets/Polygon.svg" alt="" />
+            </div>
           </div>
         </ul>
       </div>

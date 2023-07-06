@@ -2,10 +2,27 @@
 body {
   margin: 0px;
 }
+.navhight {
+  height: 80px;
+}
 .appbar-items {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.popup {
+  width: 200px;
+  height: 360px;
+  padding: 20px !important;
+  ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    li {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
 }
 .active {
   color: #306fd5;
@@ -97,6 +114,16 @@ li:hover {
 }
 .primary-c-btn:hover {
   background-color: #306fd5d7;
+}
+@media only screen and (min-width: 391px) and (max-width: 768px) {
+  .navhight {
+    padding: 0px 30px !important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .navhight {
+    padding: 0px 20px !important;
+  }
 }
 @media #{$laptop-device} {
   .c-btn {
