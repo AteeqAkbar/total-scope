@@ -202,6 +202,7 @@ label {
     flex-direction: column;
     width: 344px;
     height: 227px;
+    margin-bottom: 36px;
     padding: 41.5px 26.5px 34.5px 26.5px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -219,6 +220,12 @@ label {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .about-main {
     flex-direction: column;
+  }
+  .section-one {
+    flex: 2;
+  }
+  .section-two {
+    flex: 0.9;
   }
   .c-fields {
     input {
@@ -238,6 +245,8 @@ label {
     display: flex;
     flex-direction: column;
     padding: 26px;
+    margin-bottom: 36px;
+
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -248,6 +257,12 @@ label {
 @media only screen and (min-width: 1201px) and (max-width: 1399px) {
   .about-main {
     flex-direction: column;
+  }
+  .section-one {
+    flex: 2;
+  }
+  .section-two {
+    flex: 0.9;
   }
   .c-fields {
     input {
@@ -288,6 +303,9 @@ label {
     padding: 0px 0px 38px 0px;
     margin: 0;
   }
+  .section-one {
+    flex: none;
+  }
 
   label {
     font-size: 17px;
@@ -301,7 +319,7 @@ label {
     }
   }
   .section-two {
-    flex: 0.3;
+    flex: none;
     display: flex;
     align-items: center;
     justify-content: center;
