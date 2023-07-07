@@ -38,13 +38,16 @@
   img {
     height: 24px;
     width: 24px;
+    margin-right: 8px;
   }
 }
 .section-one-image {
-  height: inherit;
-  object-fit: inherit;
-  object-position: top;
-  width: 100%;
+  height: 493px;
+  align-items: baseline;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-image: url("../../../assets/roofer.png");
 }
 .section-two {
   flex: 1;
@@ -87,8 +90,14 @@
     line-height: 28px;
     margin-bottom: 16.06px;
   }
+
   .section-one-image {
-    height: 100%;
+    height: 249.026px !important;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
   }
   .section-one-heading {
     width: 338.08px;
@@ -133,52 +142,71 @@
 }
 
 /* Large (LG) */
-@media screen and (min-width: 993px) and (max-width: 1200px) and (min-width: 1400px) {
-  .main-one {
-    // flex: 2;
-    padding: 17px 0px;
-  }
-  .main {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    flex-direction: column;
-  }
-  .app-store {
-    height: 31.06px;
-    width: 105.6px;
-  }
-  .qr-image {
-    height: 105.6px;
-    width: 105.6px;
-  }
-  .heading1 {
-    width: 422.5px;
-    padding-bottom: 39px;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 34px;
-  }
-  .qr {
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    height: 260px;
-    font-size: 20px;
-    width: 274px;
-  }
-}
-
-/* Extra Large (XL) */
-@media screen and (min-width: 1201px) and (max-width: 1399px) and (min-width: 1400px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .top-heading {
     font-size: 22px;
     padding-top: 22px;
     padding-bottom: 16px;
   }
-  // .section-one-image {
-  //   height: 100%;
-  // }
+  .section-one-image {
+    height: 493px;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
+  }
+  .section-one-heading {
+    width: 368.34px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.5px;
+
+    padding-bottom: 14px;
+  }
+  .section-one-list {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 9px;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .section-two-main {
+    font-size: 28px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 43px;
+  }
+  .section-two-p {
+    font-size: 17px;
+  }
+  .section-two-main-div {
+    padding-bottom: 46px;
+  }
+}
+
+/* Extra Large (XL) */
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+  .top-heading {
+    font-size: 22px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+  .section-one-image {
+    height: 493px;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
+  }
   .section-one-heading {
     width: 472.34px;
     font-size: 46px;
@@ -215,15 +243,20 @@
   }
 }
 
-@media screen and (min-height: 900px) and (max-height: 957px) {
+@media screen and (min-height: 900px) and (max-height: 957px) and (min-width: 1400px) {
   .top-heading {
     font-size: 22px;
     padding-top: 12px;
     padding-bottom: 8px;
   }
-  // .section-one-image {
-  //   height: 100%;
-  // }
+  .section-one-image {
+    height: 493px;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
+  }
   .section-one-heading {
     width: 472.34px;
     font-size: 42px;
@@ -261,15 +294,20 @@
 }
 
 /* Styles for screens with a height above 900 pixels */
-@media screen and (min-height: 958px) {
+@media screen and (min-height: 958px) and (min-width: 1400px) {
   .top-heading {
     font-size: 22px;
     padding-top: 22px;
     padding-bottom: 16px;
   }
-  // .section-one-image {
-  //   height: 100%;
-  // }
+  .section-one-image {
+    height: 493px;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
+  }
   .section-one-heading {
     width: 472.34px;
     font-size: 46px;
@@ -306,60 +344,60 @@
   }
 }
 
-@media only screen and (max-height: 766px) and (min-width: 769px) {
-  .top-heading {
-    font-family: "AvenirNext-Medium";
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .section-one-heading {
-    font-family: "AvenirNext-Bold";
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1;
-    padding-bottom: 10px;
-    width: 260.34px;
-  }
-  .section-one-list {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-size: 15px;
-    font-weight: 600;
-    img {
-      height: 18px;
-      width: 18px;
-    }
-  }
-  .section-one-image {
-    height: 317px;
-    object-fit: inherit;
-    object-position: top;
-    width: 100%;
-  }
-  .section-two {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background-color: #f2f8fd;
-  }
-  .section-two-main {
-    font-family: "AvenirNext-Medium";
-    font-size: 16px;
-    line-height: 0.7;
-    font-weight: 500;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    padding-top: 20px;
-  }
-  .section-two-p {
-    font-size: 14px;
-    font-weight: 400;
-  }
-}
+// @media only screen and (max-height: 766px) and (min-width: 769px) {
+//   .top-heading {
+//     font-family: "AvenirNext-Medium";
+//     font-size: 16px;
+//     font-weight: 500;
+//   }
+//   .section-one-heading {
+//     font-family: "AvenirNext-Bold";
+//     font-size: 25px;
+//     font-weight: 700;
+//     line-height: 1;
+//     padding-bottom: 10px;
+//     width: 260.34px;
+//   }
+//   .section-one-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: start;
+//     font-size: 15px;
+//     font-weight: 600;
+//     img {
+//       height: 18px;
+//       width: 18px;
+//     }
+//   }
+//   .section-one-image {
+//     height: 317px;
+//     object-fit: inherit;
+//     object-position: top;
+//     width: 100%;
+//   }
+//   .section-two {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     background-color: #f2f8fd;
+//   }
+//   .section-two-main {
+//     font-family: "AvenirNext-Medium";
+//     font-size: 16px;
+//     line-height: 0.7;
+//     font-weight: 500;
+//     padding-bottom: 5px;
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     justify-content: center;
+//     padding-top: 20px;
+//   }
+//   .section-two-p {
+//     font-size: 14px;
+//     font-weight: 400;
+//   }
+// }
 
 @media #{$extra-large-device} {
   .top-heading {
