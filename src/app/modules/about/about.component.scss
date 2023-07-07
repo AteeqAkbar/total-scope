@@ -294,7 +294,7 @@
 }
 
 /* Styles for screens with a height above 900 pixels */
-@media screen and (min-height: 958px) and (min-width: 1400px) {
+@media screen and (min-height: 958px) and (max-height: 1024px) and (min-width: 1400px) {
   .top-heading {
     font-size: 22px;
     padding-top: 22px;
@@ -327,6 +327,61 @@
       height: 24px;
       width: 24px;
     }
+  }
+  .section-two-main {
+    font-size: 28px;
+    line-height: 0.8;
+
+    padding-bottom: 5px;
+
+    padding-top: 43px;
+  }
+  .section-two-p {
+    font-size: 17px;
+  }
+  .section-two-main-div {
+    padding-bottom: 46px;
+  }
+}
+@media screen and (min-height: 1025px) and (min-width: 1400px) {
+  .top-heading {
+    font-size: 22px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+  .section-one-image {
+    height: 493px;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("../../../assets/roofer.png");
+  }
+  .section-one-heading {
+    width: 472.34px;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49.5px;
+
+    padding-bottom: 22px;
+  }
+  .section-one-list {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 9px;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .section-two {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    background-color: #f2f8fd;
   }
   .section-two-main {
     font-size: 28px;
